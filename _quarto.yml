@@ -1,0 +1,38 @@
+project:
+  type: website
+  output-dir: _site
+  
+website:
+  title: "Uzuki Laboratory"
+  navbar:
+    background: primary
+    search: true
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - text: "講義"
+        menu:
+          - text: "栽培施設学"
+            href: courses/facility/index.qmd
+          - text: "スマート農業"
+            href: courses/smart-ag/index.qmd
+          - text: "R講座"
+            href: courses/r-course/index.qmd
+          - text: "統計講座"
+            href: courses/stats/index.qmd
+      - text: "研究"
+        href: research/index.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: assets/css/styles.css
+    toc: true
+    lang: ja
+    
+execute:
+  freeze: auto
+
+
+
