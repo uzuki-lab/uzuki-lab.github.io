@@ -1,13 +1,9 @@
-# Quarto関連
-/_site/
+_site/
 /.quarto/
 *.html
-
-# R関連
+*_files/
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
-
-# OS関連
 .DS_Store
