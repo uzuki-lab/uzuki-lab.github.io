@@ -1,7 +1,13 @@
 project:
   type: website
   output-dir: _site
-  
+  resources:
+    - "assets/**"
+    - "courses/**/*.js"
+
+execute:
+  freeze: auto
+
 website:
   title: "Uzuki Laboratory"
   navbar:
@@ -27,13 +33,10 @@ website:
             href: courses/stats/index.qmd
       - text: "研究"
         href: research/index.qmd
+
 format:
   html:
     theme: cosmo
     css: assets/css/styles.css
     toc: true
     lang: ja
-    locale: ja-JP
-    
-execute:
-  freeze: auto
