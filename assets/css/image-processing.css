@@ -58,7 +58,14 @@ canvas {
 
 .histogram-container {
     position: relative;
+    height: 300px;
+    width: 100%;
 }
+
+#histogramCanvas {
+    height: 300px !important;
+}
+
 
 /* コントロール */
 .controls {
