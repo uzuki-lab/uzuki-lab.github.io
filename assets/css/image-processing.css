@@ -1,0 +1,90 @@
+/* 全体のレイアウト */
+.instructions {
+    margin: 2rem 0;
+}
+
+.instructions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.instruction-step {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* メインコンテンツエリア */
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.canvas-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4/3;
+}
+
+.canvas-label {
+    position: absolute;
+    top: -1.5rem;
+    left: 0;
+    font-weight: bold;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+}
+
+/* ヒストグラムセクション */
+.histogram-section {
+    margin: 2rem 0;
+}
+
+.histogram-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 2rem;
+}
+
+.histogram-container {
+    position: relative;
+}
+
+/* コントロール */
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+}
+
+.threshold-value {
+    font-weight: bold;
+    min-width: 3rem;
+    text-align: center;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+    .main-content,
+    .histogram-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .instruction-step {
+        margin-bottom: 1rem;
+    }
+}
