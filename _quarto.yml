@@ -15,14 +15,12 @@ website:
         menu:
           - text: "栽培施設学"
             href: courses/facility/index.qmd
-          - text: "スマート農業"
-            menu:  # スマート農業にサブメニューを追加
-              - text: "概要"
-                href: courses/smart-ag/index.qmd
-              - text: "画像処理の基礎"
-                href: courses/smart-ag/image-processing/index.qmd
-              - text: "分光分析"
-                href: courses/smart-ag/spectral-analysis/index.qmd
+          - text: "スマート農業 - 概要"
+            href: courses/smart-ag/index.qmd
+          - text: "スマート農業 - 画像処理"
+            href: courses/smart-ag/image-processing/index.qmd
+          - text: "スマート農業 - 分光分析"
+            href: courses/smart-ag/spectral-analysis/index.qmd
           - text: "R講座"
             href: courses/r-course/index.qmd
           - text: "統計講座"
@@ -35,6 +33,7 @@ format:
     css: assets/css/styles.css
     toc: true
     lang: ja
+    locale: ja-JP
     
 execute:
   freeze: auto
