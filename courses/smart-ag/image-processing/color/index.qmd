@@ -1,0 +1,32 @@
+---
+title: "色について"
+format:
+  html:
+    page-layout: full
+    include-in-header:
+      - text: |
+          <script src="app.js"></script>
+---
+
+## 色空間とは
+
+デジタル画像における色の表現方法について学びます。主な色空間には以下のようなものがあります：
+
+- RGB色空間
+- HSV色空間
+- L*a*b*色空間
+
+## インタラクティブデモ
+
+<div id="color-app"></div>
+
+## 解説
+
+### RGB色空間
+赤（Red）、緑（Green）、青（Blue）の3原色を組み合わせて色を表現します。
+
+### HSV色空間
+色相（Hue）、彩度（Saturation）、明度（Value）で色を表現します。
+
+### 色空間の変換
+用途に応じて適切な色空間を選択し、変換することで効果的な画像処理が可能になります。
