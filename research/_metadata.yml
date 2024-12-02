@@ -1,0 +1,4 @@
+# 研究ページ共通の設定
+format:
+  html:
+     toc: true
