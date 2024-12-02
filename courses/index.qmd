@@ -1,0 +1,17 @@
+---
+title: "講義"
+---
+
+# 講義
+
+- [栽培施設学](facility/index.qmd)
+  栽培施設学
+
+- [スマート農業](smart-ag/index.qmd)
+  スマート農業
+
+- [R講座](r-course/index.qmd)
+  R講座
+
+- [統計講座](stats/index.qmd)
+  統計講座
