@@ -1,0 +1,23 @@
+---
+title: "Uzuki Laboratory"
+---
+
+# ようこそ
+
+このサイトでは、研究室の活動内容や講義資料を公開しています。でもまあ、作りかけwww
+
+## お知らせ
+
+- 2024年度の講義情報を更新しました、なんちゃって
+- まあつくりかけなので。
+
+## 講義
+
+- [栽培施設学](courses/facility/index.qmd)
+- [スマート農業](courses/smart-ag/index.qmd)
+- [R講座](courses/r-course/index.qmd)
+- [統計講座](courses/stats/index.qmd)
+
+## 研究活動
+
+[研究活動の詳細はこちら](research/index.qmd)
