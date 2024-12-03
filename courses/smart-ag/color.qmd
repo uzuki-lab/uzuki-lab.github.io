@@ -1,32 +1,101 @@
 ---
-title: "色について"
+title: "スマート農業のための画像処理学習システム - カラーフィルタリング"
+description: "HSV色空間を用いた特定色抽出の学習ツール"
 format:
   html:
-    page-layout: full
-    include-in-header:
-      - text: |
-          <script src="app.js"></script>
+    css: ../../assets/css/image-processing.css
+include-after: |
+  <script src="color-app.js"></script>
 ---
 
-## 色空間とは
+## 📚 システムの使い方
 
-デジタル画像における色の表現方法について学びます。主な色空間には以下のようなものがあります：
+::: {.grid}
 
-- RGB色空間
-- HSV色空間
-- L*a*b*色空間
+::: {.g-col-12 .g-col-md-3}
+### 1. 色の選択方法（3通り）
 
-## インタラクティブデモ
+以下の3つの方法から、抽出したい色を選択できます：
 
-<div id="color-app"></div>
+- HSV色相環をクリック
+- 色相範囲(H)、彩度範囲(S)、明度範囲(V)のスライダーを調整
+- プリセットボタン（緑色抽出、赤色抽出、黄色抽出）を使用
+:::
 
-## 解説
+::: {.g-col-12 .g-col-md-3}
+### 2. 色の許容範囲の調整
 
-### RGB色空間
-赤（Red）、緑（Green）、青（Blue）の3原色を組み合わせて色を表現します。
+色相、彩度、明度のスライダーで抽出する色の範囲を微調整します。
+:::
 
-### HSV色空間
-色相（Hue）、彩度（Saturation）、明度（Value）で色を表現します。
+::: {.g-col-12 .g-col-md-3}
+### 3. プリセットの活用
 
-### 色空間の変換
-用途に応じて適切な色空間を選択し、変換することで効果的な画像処理が可能になります。
+緑色抽出は葉の判定に、赤色抽出は果実の判定に利用できます。
+:::
+
+::: {.g-col-12 .g-col-md-3}
+### 4. 結果の確認
+
+抽出結果を確認し、必要に応じて各パラメータを微調整します。
+:::
+
+:::
+
+::: {.main-content}
+::: {.canvas-container}
+[元画像]{.canvas-label}
+<canvas id="sourceCanvas"></canvas>
+:::
+
+::: {.canvas-container}
+[フィルタリング結果]{.canvas-label}
+<canvas id="resultCanvas"></canvas>
+:::
+:::
+
+::: {.controls-section}
+::: {.controls-grid}
+::: {.color-wheel-container}
+[HSV色相環]{.canvas-label}
+<canvas id="colorWheel"></canvas>
+<div id="selectedColor" class="value-display">選択色: H:0° S:100% V:100%</div>
+:::
+
+::: {.controls}
+::: {.slider-container}
+色相範囲 (H)
+<div style="display: flex; gap: 10px; align-items: center;">
+<div style="flex: 1;">
+<span class="small">最小値</span>
+<span id="hueMinValue" class="value-display">0°</span>
+<input type="range" id="hueMinSlider" min="0" max="360" value="0">
+</div>
+<div style="flex: 1;">
+<span class="small">最大値</span>
+<span id="hueMaxValue" class="value-display">60°</span>
+<input type="range" id="hueMaxSlider" min="0" max="360" value="60">
+</div>
+</div>
+:::
+
+::: {.slider-container}
+彩度範囲 (S)
+<span id="satValue" class="value-display">50</span>
+<input type="range" id="satSlider" min="0" max="100" value="50">
+:::
+
+::: {.slider-container}
+明度範囲 (V)
+<span id="valValue" class="value-display">50</span>
+<input type="range" id="valSlider" min="0" max="100" value="50">
+:::
+
+::: {.preset-buttons}
+<button id="greenButton">緑色抽出</button>
+<button id="redButton">赤色抽出</button>
+<button id="yellowButton">黄色抽出</button>
+:::
+:::
+:::
+:::
