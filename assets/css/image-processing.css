@@ -1,4 +1,4 @@
-/* 全体のレイアウト */
+/* 既存のスタイル */
 .instructions {
     margin: 2rem 0;
 }
@@ -66,8 +66,7 @@ canvas {
     height: 300px !important;
 }
 
-
-/* コントロール */
+/* コントロール共通 */
 .controls {
     display: flex;
     align-items: center;
@@ -84,14 +83,67 @@ canvas {
     text-align: center;
 }
 
+/* カラーフィルタリング用の追加スタイル */
+.controls-section {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+}
+
+.controls-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 2rem;
+}
+
+.color-wheel-container {
+    width: 200px;
+    position: relative;
+}
+
+.slider-container {
+    margin: 1rem 0;
+}
+
+.value-display {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+.preset-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.preset-buttons button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.preset-buttons button:hover {
+    background-color: #0056b3;
+}
+
 /* レスポンシブデザイン */
 @media (max-width: 768px) {
     .main-content,
-    .histogram-grid {
+    .histogram-grid,
+    .controls-grid {
         grid-template-columns: 1fr;
     }
     
     .instruction-step {
         margin-bottom: 1rem;
+    }
+    
+    .color-wheel-container {
+        margin: 0 auto;
     }
 }
