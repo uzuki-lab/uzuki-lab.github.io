@@ -8,6 +8,7 @@ let currentImage = null;
 function loadImage(src) {
     console.log('Loading image from:', src);
     const img = new Image();
+    img.crossOrigin = "anonymous";
     img.onerror = () => {
         console.error('Image load failed:', src);
     };
@@ -22,7 +23,7 @@ function loadImage(src) {
         applyThreshold(128);
         updateHistogram();
     };
-    img.src = src;
+    img.src = `${src}?${new Date().getTime()}`;
 }
 
 // 二値化処理関数
@@ -43,6 +44,7 @@ function applyThreshold(threshold) {
         imageData.data[i] = binary;
         imageData.data[i + 1] = binary;
         imageData.data[i + 2] = binary;
+        imageData.data[i + 3] = currentImage.data[i + 3]; // アルファチャンネルを保持
     }
     resultCtx.putImageData(imageData, 0, 0);
 }
@@ -123,7 +125,8 @@ function initializeApp() {
         }
     });
 
-    loadImage("../../../assets/images/smart-ag/test-image.jpg");
+    // 絶対パスを使用
+    loadImage("/assets/images/smart-ag/test-image.jpg");
     console.log('Application initialized successfully');
 }
 
