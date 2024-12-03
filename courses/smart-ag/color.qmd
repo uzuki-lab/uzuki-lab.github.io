@@ -42,7 +42,7 @@ include-after: |
 
 :::
 
-::: {.main-content}
+::: {.image-processing-container}
 ::: {.canvas-container}
 [元画像]{.canvas-label}
 <canvas id="sourceCanvas"></canvas>
@@ -64,29 +64,24 @@ include-after: |
 
 ::: {.controls}
 ::: {.slider-container}
-色相範囲 (H)
-<div style="display: flex; gap: 10px; align-items: center;">
-<div style="flex: 1;">
-<span class="small">最小値</span>
-<span id="hueMinValue" class="value-display">0°</span>
+### 色相範囲 (H)
+::: {.hue-sliders}
+**最小値** <span id="hueMinValue" class="value-display">0°</span>
 <input type="range" id="hueMinSlider" min="0" max="360" value="0">
-</div>
-<div style="flex: 1;">
-<span class="small">最大値</span>
-<span id="hueMaxValue" class="value-display">60°</span>
+
+**最大値** <span id="hueMaxValue" class="value-display">60°</span>
 <input type="range" id="hueMaxSlider" min="0" max="360" value="60">
-</div>
-</div>
+:::
 :::
 
 ::: {.slider-container}
-彩度範囲 (S)
+### 彩度範囲 (S)
 <span id="satValue" class="value-display">50</span>
 <input type="range" id="satSlider" min="0" max="100" value="50">
 :::
 
 ::: {.slider-container}
-明度範囲 (V)
+### 明度範囲 (V)
 <span id="valValue" class="value-display">50</span>
 <input type="range" id="valSlider" min="0" max="100" value="50">
 :::
