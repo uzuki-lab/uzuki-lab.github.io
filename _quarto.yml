@@ -4,36 +4,42 @@ project:
   resources:
     - "assets/**"
     - "courses/**/*.js"
-
 execute:
   freeze: auto
-
 website:
-  title: "Uzuki Laboratory"
+  title: "Uzuki-Lab"
   navbar:
     background: primary
     search: true
     left:
-      - text: "講義"
-        menu:
-          - text: "栽培施設学"
-            href: courses/facility/index.qmd
-          - text: "スマート農業 - 概要"
-            href: courses/smart-ag/index.qmd
-          - text: "スマート農業 - 2値化処理"
-            href: courses/smart-ag/binarization.qmd
-          - text: "スマート農業 - 色処理"
-            href: courses/smart-ag/color.qmd
-          - text: "スマート農業 - エッジ検出"
-            href: courses/smart-ag/sobel.qmd
-          - text: "スマート農業 - 分光分析"
-            href: courses/smart-ag/spectral.qmd
-          - text: "R講座"
-            href: courses/r-course/index.qmd
-          - text: "統計講座"
-            href: courses/stats/index.qmd
       - text: "研究"
         href: research/index.qmd
+  sidebar:
+    style: "docked"
+    search: true
+    collapse-level: 0
+    contents:
+      - section: "講義"
+        contents:
+          - section: "栽培施設学"
+            href: courses/facility/index.qmd
+          - section: "スマート農業"
+            collapse-level: 0
+            contents:
+              - text: "概要"
+                href: courses/smart-ag/index.qmd
+              - text: "2値化処理"
+                href: courses/smart-ag/binarization.qmd
+              - text: "カラー画像の仕組み"
+                href: courses/smart-ag/color.qmd
+              - text: "エッジ検出"
+                href: courses/smart-ag/edge.qmd
+              - text: "分光分析"
+                href: courses/smart-ag/spectral.qmd
+          - section: "Ｒ講座"
+            href: courses/r-course/index.qmd
+          - section: "統計基礎"
+            href: courses/stats/index.qmd
 format:
   html:
     code-tools: false
