@@ -78,54 +78,20 @@ function rgbToHsv(r, g, b) {
     };
 }
 
-// 色相環クリック時の処理
-colorWheel.addEventListener('click', (e) => {
-    const rect = colorWheel.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+// キャンバスサイズの設定
+function setCanvasSize(canvas, width, height) {
+    const maxWidth = 400;  // 最大幅
+    const maxHeight = 300; // 最大高さ
     
-    const centerX = colorWheel.width / 2;
-    const centerY = colorWheel.height / 2;
+    // アスペクト比を計算
+    const ratio = Math.min(maxWidth / width, maxHeight / height);
     
-    const angle = Math.atan2(y - centerY, x - centerX);
-    const hue = ((angle * 180 / Math.PI + 360) % 360);
+    // 新しいサイズを設定
+    canvas.width = width * ratio;
+    canvas.height = height * ratio;
     
-    document.getElementById('selectedColor').textContent = 
-        `選択色: H:${Math.round(hue)}° S:100% V:100%`;
-    
-    document.getElementById('hueMinSlider').value = Math.max(0, hue - 30);
-    document.getElementById('hueMaxSlider').value = Math.min(360, hue + 30);
-    updateSliderValues();
-    processImage();
-});
-
-// プリセットボタンの処理
-document.getElementById('greenButton').addEventListener('click', () => {
-    document.getElementById('hueMinSlider').value = 60;
-    document.getElementById('hueMaxSlider').value = 180;
-    document.getElementById('satSlider').value = 30;
-    document.getElementById('valSlider').value = 30;
-    updateSliderValues();
-    processImage();
-});
-
-document.getElementById('redButton').addEventListener('click', () => {
-    document.getElementById('hueMinSlider').value = 330;
-    document.getElementById('hueMaxSlider').value = 30;
-    document.getElementById('satSlider').value = 30;
-    document.getElementById('valSlider').value = 30;
-    updateSliderValues();
-    processImage();
-});
-
-document.getElementById('yellowButton').addEventListener('click', () => {
-    document.getElementById('hueMinSlider').value = 30;
-    document.getElementById('hueMaxSlider').value = 90;
-    document.getElementById('satSlider').value = 30;
-    document.getElementById('valSlider').value = 30;
-    updateSliderValues();
-    processImage();
-});
+    return ratio;
+}
 
 // スライダー値の更新と表示
 function updateSliderValues() {
@@ -175,9 +141,10 @@ function processImage() {
             resultImageData.data[i + 2] = b; // B
             resultImageData.data[i + 3] = 255; // A
         } else {
-            resultImageData.data[i] = 0;     // R
-            resultImageData.data[i + 1] = 0; // G
-            resultImageData.data[i + 2] = 0; // B
+            // フィルタで除外された領域をgray(80)に設定
+            resultImageData.data[i] = 80;     // R
+            resultImageData.data[i + 1] = 80; // G
+            resultImageData.data[i + 2] = 80; // B
             resultImageData.data[i + 3] = 255; // A
         }
     }
@@ -185,7 +152,56 @@ function processImage() {
     rCtx.putImageData(resultImageData, 0, 0);
 }
 
-// イベントリスナーの設定
+// 色相環クリック時の処理
+colorWheel.addEventListener('click', (e) => {
+    const rect = colorWheel.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    const centerX = colorWheel.width / 2;
+    const centerY = colorWheel.height / 2;
+    
+    const angle = Math.atan2(y - centerY, x - centerX);
+    const hue = ((angle * 180 / Math.PI + 360) % 360);
+    
+    document.getElementById('selectedColor').textContent = 
+        `選択色: H:${Math.round(hue)}° S:100% V:100%`;
+    
+    document.getElementById('hueMinSlider').value = Math.max(0, hue - 30);
+    document.getElementById('hueMaxSlider').value = Math.min(360, hue + 30);
+    updateSliderValues();
+    processImage();
+});
+
+// プリセットボタンの処理
+document.getElementById('greenButton').addEventListener('click', () => {
+    document.getElementById('hueMinSlider').value = 60;
+    document.getElementById('hueMaxSlider').value = 180;
+    document.getElementById('satSlider').value = 30;
+    document.getElementById('valSlider').value = 30;
+    updateSliderValues();
+    processImage();
+});
+
+document.getElementById('redButton').addEventListener('click', () => {
+    document.getElementById('hueMinSlider').value = 330;
+    document.getElementById('hueMaxSlider').value = 30;
+    document.getElementById('satSlider').value = 30;
+    document.getElementById('valSlider').value = 30;
+    updateSliderValues();
+    processImage();
+});
+
+document.getElementById('yellowButton').addEventListener('click', () => {
+    document.getElementById('hueMinSlider').value = 30;
+    document.getElementById('hueMaxSlider').value = 90;
+    document.getElementById('satSlider').value = 30;
+    document.getElementById('valSlider').value = 30;
+    updateSliderValues();
+    processImage();
+});
+
+// スライダーのイベントリスナー設定
 ['hueMinSlider', 'hueMaxSlider', 'satSlider', 'valSlider'].forEach(id => {
     const slider = document.getElementById(id);
     slider.addEventListener('input', () => {
@@ -196,30 +212,23 @@ function processImage() {
 
 // 初期化
 window.addEventListener('load', () => {
-    // Canvas サイズの設定
-    const width = 400;
-    const height = 300;
-    
-    [sourceCanvas, resultCanvas].forEach(canvas => {
-        canvas.width = width;
-        canvas.height = height;
-    });
-    
     colorWheel.width = 200;
     colorWheel.height = 200;
-    
-    // 色相環の描画
     drawColorWheel();
     
     // テスト画像の読み込み
     const img = new Image();
     img.src = '/assets/images/smart-ag/color.jpg';
     img.onload = () => {
+        // アスペクト比を保持してキャンバスサイズを設定
+        const ratio = setCanvasSize(sourceCanvas, img.width, img.height);
+        setCanvasSize(resultCanvas, img.width, img.height);
+        
+        // 画像を描画
         const ctx = sourceCanvas.getContext('2d');
-        ctx.drawImage(img, 0, 0, width, height);
+        ctx.drawImage(img, 0, 0, sourceCanvas.width, sourceCanvas.height);
         processImage();
     };
     
-    // 初期値の設定
     updateSliderValues();
 });
