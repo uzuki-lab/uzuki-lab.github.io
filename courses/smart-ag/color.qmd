@@ -1,18 +1,18 @@
 ---
-title: "スマート農業のための画像処理学習システム - カラーフィルタリング"
-description: "HSV色空間を用いた特定色抽出の学習ツール"
+title: "スマート農業のための画像処理(基礎)・カラー画像の仕組み"
 format:
   html:
     css: ../../assets/css/image-processing.css
 include-after: |
   <script src="color-app.js"></script>
 ---
+HSV色空間を用いた特定色の抽出を行う対話的な学習ツールです
 
+:::::::: instructions
 ## 📚 システムの使い方
 
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-3}
+::::::: instructions-grid
+::: instruction-step
 ### 1. 色の選択方法（3通り）
 
 以下の3つの方法から、抽出したい色を選択できます：
@@ -22,19 +22,19 @@ include-after: |
 - プリセットボタン（緑色抽出、赤色抽出、黄色抽出）を使用
 :::
 
-::: {.g-col-12 .g-col-md-3}
+::: instruction-step
 ### 2. 色の許容範囲の調整
 
 色相、彩度、明度のスライダーで抽出する色の範囲を微調整します。
 :::
 
-::: {.g-col-12 .g-col-md-3}
+::: instruction-step
 ### 3. プリセットの活用
 
 緑色抽出は葉の判定に、赤色抽出は果実の判定に利用できます。
 :::
 
-::: {.g-col-12 .g-col-md-3}
+::: instruction-step
 ### 4. 結果の確認
 
 抽出結果を確認し、必要に応じて各パラメータを微調整します。
