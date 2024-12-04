@@ -218,7 +218,7 @@ window.addEventListener('load', () => {
     
     // テスト画像の読み込み
     const img = new Image();
-    img.src = '/assets/images/smart-ag/color.jpg';
+    img.src = '/assets/images/smart-ag/color_test_image.jpg';
     img.onload = () => {
         // アスペクト比を保持してキャンバスサイズを設定
         const ratio = setCanvasSize(sourceCanvas, img.width, img.height);
