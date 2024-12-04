@@ -1,0 +1,256 @@
+[
+  {
+    "objectID": "courses/r-course/index.html",
+    "href": "courses/r-course/index.html",
+    "title": "Ｒ講座",
+    "section": "",
+    "text": "1 絶賛工事中！",
+    "crumbs": [
+      "研究",
+      "講義",
+      "Ｒ講座"
+    ]
+  },
+  {
+    "objectID": "courses/index.html",
+    "href": "courses/index.html",
+    "title": "講義",
+    "section": "",
+    "text": "1 講義\n\n栽培施設学 栽培施設学\nスマート農業 スマート農業\nR講座 R講座\n統計講座 統計講座"
+  },
+  {
+    "objectID": "courses/smart-ag/binarization.html",
+    "href": "courses/smart-ag/binarization.html",
+    "title": "スマート農業のための画像処理(基礎)・二値化処理",
+    "section": "",
+    "text": "画像の二値化処理を学ぶための対話的な学習ツールです",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "2値化処理"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/binarization.html#アプリの使い方",
+    "href": "courses/smart-ag/binarization.html#アプリの使い方",
+    "title": "スマート農業のための画像処理(基礎)・二値化処理",
+    "section": "1 📚 アプリの使い方",
+    "text": "1 📚 アプリの使い方\n\n\n1.1 1. 画像の観察\n左側の元画像をよく観察してください。この画像がどのような明暗の特徴を持っているか確認しましょう。\n\n\n1.2 2. ヒストグラムの確認\nヒストグラムで画像の明るさの分布を確認します。山が2つある場合は、二値化に適している目安となります。\n\n\n1.3 3. 閾値の調整\nスライダーを動かして二値化の閾値を調整します。結果を観察しながら、最適な値を探してみましょう。\n\n\n1.4 4. 結果の評価\n二値化された画像を確認し、目的に応じて適切な閾値が設定できているか評価します。",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "2値化処理"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/index.html",
+    "href": "courses/smart-ag/index.html",
+    "title": "スマート農業",
+    "section": "",
+    "text": "スマート農業は、ICTやロボット技術を活用して農業の効率化や高度化を実現する新しい農業の形です。\n\n\nこのコースでは、スマート農業に用いられる画像処理と分光分析の基礎について学びます。\n\n2値化処理 形状認識や面積計算に用いられる画像の2値化処理について学びます\nカラー画像の仕組み カラー画像処理の基礎としてRGB色空間やHSV色空間について学びます\nエッジ検出 物体検出や位置測定に使われるエッジ検出について学びます\n分光分析 植物の生育状態を分析するための分光分析手法について学びます\n\n\n\n\n\nWebブラウザ\nノート、筆記用具",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "概要"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/index.html#講義内容",
+    "href": "courses/smart-ag/index.html#講義内容",
+    "title": "スマート農業",
+    "section": "",
+    "text": "このコースでは、スマート農業に用いられる画像処理と分光分析の基礎について学びます。\n\n2値化処理 形状認識や面積計算に用いられる画像の2値化処理について学びます\nカラー画像の仕組み カラー画像処理の基礎としてRGB色空間やHSV色空間について学びます\nエッジ検出 物体検出や位置測定に使われるエッジ検出について学びます\n分光分析 植物の生育状態を分析するための分光分析手法について学びます",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "概要"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/index.html#準備するもの",
+    "href": "courses/smart-ag/index.html#準備するもの",
+    "title": "スマート農業",
+    "section": "",
+    "text": "Webブラウザ\nノート、筆記用具",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "概要"
+    ]
+  },
+  {
+    "objectID": "courses/facility/index.html",
+    "href": "courses/facility/index.html",
+    "title": "栽培施設学",
+    "section": "",
+    "text": "1 絶賛工事中！",
+    "crumbs": [
+      "研究",
+      "講義",
+      "栽培施設学"
+    ]
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "研究",
+    "section": "",
+    "text": "絶賛工事中！"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Uzuki−Lab",
+    "section": "",
+    "text": "このサイトでは、研究室の活動内容や講義資料を公開しています。でもまあ、作りかけwww\n\n\n\n2024年度時点で多くの部分が絶賛工事中です。\nスマ農だけ大慌てで作っている体たらく・・・\n\n\n\n\n\n栽培施設学\nスマート農業\nR講座\n統計基礎\n\n\n\n\n研究活動の詳細はこちら"
+  },
+  {
+    "objectID": "index.html#お知らせ",
+    "href": "index.html#お知らせ",
+    "title": "Uzuki−Lab",
+    "section": "",
+    "text": "2024年度時点で多くの部分が絶賛工事中です。\nスマ農だけ大慌てで作っている体たらく・・・"
+  },
+  {
+    "objectID": "index.html#講義",
+    "href": "index.html#講義",
+    "title": "Uzuki−Lab",
+    "section": "",
+    "text": "栽培施設学\nスマート農業\nR講座\n統計基礎"
+  },
+  {
+    "objectID": "index.html#研究活動",
+    "href": "index.html#研究活動",
+    "title": "Uzuki−Lab",
+    "section": "",
+    "text": "研究活動の詳細はこちら"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "courses/smart-ag/spectral.html",
+    "href": "courses/smart-ag/spectral.html",
+    "title": "分光分析",
+    "section": "",
+    "text": "分光分析は、物質と光の相互作用を利用して対象物の特性を分析する手法です。 農業分野では、作物の生育状態診断や品質評価などに活用されています。",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "分光分析"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/spectral.html#分光分析とは",
+    "href": "courses/smart-ag/spectral.html#分光分析とは",
+    "title": "分光分析",
+    "section": "",
+    "text": "分光分析は、物質と光の相互作用を利用して対象物の特性を分析する手法です。 農業分野では、作物の生育状態診断や品質評価などに活用されています。",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "分光分析"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/spectral.html#インタラクティブデモ",
+    "href": "courses/smart-ag/spectral.html#インタラクティブデモ",
+    "title": "分光分析",
+    "section": "2 インタラクティブデモ",
+    "text": "2 インタラクティブデモ",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "分光分析"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/spectral.html#解説",
+    "href": "courses/smart-ag/spectral.html#解説",
+    "title": "分光分析",
+    "section": "3 解説",
+    "text": "3 解説\n\n3.1 基本原理\n\n光の波長と物質の相互作用\n反射・透過・吸収スペクトル\nスペクトルデータの解釈\n\n\n\n3.2 農業での応用例\n\n葉の窒素含有量の推定\n果実の糖度推定\n土壌水分の計測\n\n\n\n3.3 データ解析手法\n\nスペクトル前処理\n多変量解析\n機械学習による解析",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "分光分析"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/edge.html",
+    "href": "courses/smart-ag/edge.html",
+    "title": "スマート農業のための画像処理(基礎)・エッジ検出",
+    "section": "",
+    "text": "エッジ検出処理を学ぶための対話的な学習ツールです\n\n\n\n\n\n\n左側の元画像をよく観察してください。この画像の中で、エッジとして検出したい部分を確認しましょう。\n\n\n\nSobelフィルタとPrewittフィルタから選択できます。それぞれの特徴を理解しながら使い分けてみましょう。\n\n\n\nスライダーを動かしてエッジ検出の感度を調整します。結果を観察しながら、最適な値を探してみましょう。\n\n\n\n\n\n\n元画像\n\n\n\n\n\n\nエッジ検出結果\n\n\n\n\n\n\n\nフィルタの種類：  Sobelフィルタ Prewittフィルタ \n\n\n\n横方向フィルタ\n\n\n\n\n-1\n0\n1\n\n\n\n\n-2\n0\n2\n\n\n-1\n0\n1\n\n\n\n\n横方向のエッジを検出\n\n\n\n\n縦方向フィルタ\n\n\n\n\n-1\n-2\n-1\n\n\n\n\n0\n0\n0\n\n\n1\n2\n1\n\n\n\n\n縦方向のエッジを検出\n\n\n\n\n\n感度調整：  50",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "エッジ検出"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/edge.html#システムの使い方",
+    "href": "courses/smart-ag/edge.html#システムの使い方",
+    "title": "スマート農業のための画像処理(基礎)・エッジ検出",
+    "section": "",
+    "text": "左側の元画像をよく観察してください。この画像の中で、エッジとして検出したい部分を確認しましょう。\n\n\n\nSobelフィルタとPrewittフィルタから選択できます。それぞれの特徴を理解しながら使い分けてみましょう。\n\n\n\nスライダーを動かしてエッジ検出の感度を調整します。結果を観察しながら、最適な値を探してみましょう。",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "エッジ検出"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/color.html",
+    "href": "courses/smart-ag/color.html",
+    "title": "スマート農業のための画像処理(基礎)・カラー画像の仕組み",
+    "section": "",
+    "text": "HSV色空間を用いた特定色の抽出を行う対話的な学習ツールです",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "カラー画像の仕組み"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/color.html#システムの使い方",
+    "href": "courses/smart-ag/color.html#システムの使い方",
+    "title": "スマート農業のための画像処理(基礎)・カラー画像の仕組み",
+    "section": "1 📚 システムの使い方",
+    "text": "1 📚 システムの使い方\n\n\n1.1 1. 色の選択方法（3通り）\n以下の3つの方法から、抽出したい色を選択できます：\n\nHSV色相環をクリック\n色相範囲(H)、彩度範囲(S)、明度範囲(V)のスライダーを調整\nプリセットボタン（緑色抽出、赤色抽出、黄色抽出）を使用\n\n\n\n1.2 2. 色の許容範囲の調整\n色相、彩度、明度のスライダーで抽出する色の範囲を微調整します。\n\n\n1.3 3. プリセットの活用\n緑色抽出は葉の判定に、赤色抽出は果実の判定に利用できます。\n\n\n1.4 4. 結果の確認\n抽出結果を確認し、必要に応じて各パラメータを微調整します。\n\n\n\n\n元画像\n\n\n\n\nフィルタリング結果\n\n\n\n\n\n\n\nHSV色相環\n\n\n\n選択色: H:0° S:100% V:100%\n\n\n\n\n1.5 色相範囲 (H)\n\n最小値 0° \n最大値 60° \n\n\n\n1.6 彩度範囲 (S)\n50 \n\n\n1.7 明度範囲 (V)\n50 \n\n\n\n緑色抽出\n\n\n赤色抽出\n\n\n黄色抽出",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "カラー画像の仕組み"
+    ]
+  },
+  {
+    "objectID": "courses/stats/index.html",
+    "href": "courses/stats/index.html",
+    "title": "統計の基礎",
+    "section": "",
+    "text": "1 絶賛工事中！",
+    "crumbs": [
+      "研究",
+      "講義",
+      "統計基礎"
+    ]
+  }
+]
