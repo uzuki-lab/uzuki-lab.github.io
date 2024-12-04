@@ -1,13 +1,17 @@
 project:
   type: website
-  output-dir: _site
+  output-dir: docs  # GitHubページ用に_siteからdocsに変更
   resources:
     - "assets/**"
     - "courses/**/*.js"
+
 execute:
   freeze: auto
+
 website:
   title: "Uzuki-Lab"
+  site-url: https://uzuki-lab.com  # カスタムドメインの設定を追加
+  favicon: assets/favicon.ico  # 必要に応じてファビコンを設定
   navbar:
     background: primary
     search: true
@@ -40,6 +44,7 @@ website:
             href: courses/r-course/index.qmd
           - section: "統計基礎"
             href: courses/stats/index.qmd
+
 format:
   html:
     code-tools: false

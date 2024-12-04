@@ -1,5 +1,5 @@
 ---
-title: "Uzuki Laboratory"
+title: "Uzuki−Lab"
 ---
 
 # ようこそ
@@ -8,15 +8,15 @@ title: "Uzuki Laboratory"
 
 ## お知らせ
 
-- 2024年度の講義情報を更新しました、なんちゃって
-- まあつくりかけなので。
+- 2024年度時点で多くの部分が絶賛工事中です。
+- スマ農だけ大慌てで作っている体たらく・・・
 
 ## 講義
 
 - [栽培施設学](courses/facility/index.qmd)
 - [スマート農業](courses/smart-ag/index.qmd)
 - [R講座](courses/r-course/index.qmd)
-- [統計講座](courses/stats/index.qmd)
+- [統計基礎](courses/stats/index.qmd)
 
 ## 研究活動
 

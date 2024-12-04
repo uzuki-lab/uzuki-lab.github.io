@@ -1,5 +1,5 @@
 ---
-title: "スマート農業のための画像処理学習システム"
+title: "スマート農業のための画像処理(基礎)・二値化処理"
 format:
   html:
     css: ../../../assets/css/image-processing.css
@@ -11,7 +11,7 @@ format:
 画像の二値化処理を学ぶための対話的な学習ツールです
 
 :::::::: instructions
-## 📚 システムの使い方
+## 📚 アプリの使い方
 
 ::::::: instructions-grid
 ::: instruction-step
@@ -48,6 +48,12 @@ format:
 :::
 :::::
 
+::: controls
+<label for="thresholdSlider">二値化の閾値：</label>
+<input type="range" id="thresholdSlider" min="0" max="255" value="128">
+<span id="thresholdValue" class="threshold-value">128</span>
+:::
+
 :::::: histogram-section
 ::::: histogram-grid
 ::: histogram-container
@@ -70,10 +76,6 @@ format:
 :::::
 ::::::
 
-::: controls
-<label for="thresholdSlider">二値化の閾値：</label>
-<input type="range" id="thresholdSlider" min="0" max="255" value="128">
-<span id="thresholdValue" class="threshold-value">128</span>
-:::
+
 
 <script src="binarization-app.js"></script>

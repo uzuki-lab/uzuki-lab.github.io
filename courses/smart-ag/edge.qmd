@@ -1,0 +1,103 @@
+---
+title: "スマート農業のための画像処理(基礎)・エッジ検出"
+format:
+  html:
+    css: ../../assets/css/image-processing.css
+    include-in-header:
+      - text: |
+          <script src="edge-app.js" defer></script>
+---
+
+::: {.content-container}
+::: {.header}
+
+エッジ検出処理を学ぶための対話的な学習ツールです
+:::
+
+::: {.instructions}
+## 📚 システムの使い方
+
+::: {.instructions-grid}
+::: {.instruction-step}
+### 1. 画像の観察
+
+左側の元画像をよく観察してください。この画像の中で、エッジとして検出したい部分を確認しましょう。
+:::
+
+::: {.instruction-step}
+### 2. 検出方法の選択
+
+SobelフィルタとPrewittフィルタから選択できます。それぞれの特徴を理解しながら使い分けてみましょう。
+:::
+
+::: {.instruction-step}
+### 3. 感度の調整
+
+スライダーを動かしてエッジ検出の感度を調整します。結果を観察しながら、最適な値を探してみましょう。
+:::
+:::
+:::
+
+::: {.main-content}
+::: {.canvas-container}
+::: {.canvas-label}
+元画像
+:::
+<canvas id="sourceCanvas"></canvas>
+:::
+
+::: {.canvas-container}
+::: {.canvas-label}
+エッジ検出結果
+:::
+<canvas id="resultCanvas"></canvas>
+:::
+:::
+
+::: {.controls}
+::: {.parameter-control}
+フィルタの種類：
+<select id="filterType">
+  <option value="sobel">Sobelフィルタ</option>
+  <option value="prewitt">Prewittフィルタ</option>
+</select>
+
+::: {#filterMatrices .filter-matrices}
+::: {.matrix-container}
+::: {.matrix-label}
+横方向フィルタ
+:::
+
+|  -1  |  0  |  1  |
+|------|-----|-----|
+|  -2  |  0  |  2  |
+|  -1  |  0  |  1  |
+
+::: {.matrix-description}
+横方向のエッジを検出
+:::
+:::
+
+::: {.matrix-container}
+::: {.matrix-label}
+縦方向フィルタ
+:::
+
+|  -1  |  -2  |  -1  |
+|------|-------|------|
+|   0  |   0   |   0  |
+|   1  |   2   |   1  |
+
+::: {.matrix-description}
+縦方向のエッジを検出
+:::
+:::
+:::
+:::
+
+::: {.parameter-control}
+感度調整：
+<input type="range" id="sensitivity" min="0" max="100" value="50">
+<span id="sensitivityValue">50</span>
+:::
+:::

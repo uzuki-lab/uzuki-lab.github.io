@@ -17,6 +17,13 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+/* 新規追加: コンテンツコンテナ */
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
 /* メインコンテンツエリア */
 .main-content {
     display: flex;
@@ -31,13 +38,13 @@
     justify-content: center;
     gap: 2rem;
     margin: 2rem 0;
-    flex-wrap: nowrap; /* 横並びを強制 */
+    flex-wrap: nowrap;
 }
 
 .canvas-container {
     position: relative;
-    min-width: 0; /* flexboxでの収縮を許可 */
-    flex: 1; /* 均等に空間を分配 */
+    min-width: 0;
+    flex: 1;
 }
 
 .canvas-label {
@@ -49,10 +56,57 @@
 
 canvas {
     width: 100%;
-    height: auto; /* アスペクト比を保持 */
+    height: auto;
     border: 1px solid #dee2e6;
     border-radius: 0.25rem;
-    display: block; /* 余分なスペースを削除 */
+    display: block;
+}
+
+/* 新規追加: フィルタマトリックス関連 */
+.filter-matrices {
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+}
+
+.matrix-container {
+    flex: 1;
+}
+
+.matrix-label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.matrix-description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+/* 新規追加: テーブルスタイル */
+table {
+    border-collapse: collapse;
+    margin: 0.5rem 0;
+}
+
+td {
+    border: 1px solid #dee2e6;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+/* 新規追加: フォーム要素スタイル */
+select, input[type="range"] {
+    margin: 0.5rem 0;
+    padding: 0.25rem;
+}
+
+#sensitivityValue {
+    margin-left: 0.5rem;
 }
 
 /* コントロールセクション */
@@ -70,12 +124,6 @@ canvas {
     align-items: flex-start;
 }
 
-.color-wheel-container {
-    width: 200px;
-    position: relative;
-    flex-shrink: 0;
-}
-
 .controls {
     display: flex;
     flex-direction: column;
@@ -83,6 +131,3 @@ canvas {
     flex-grow: 1;
     max-width: 400px;
 }
-
-/* その他のスタイルは変更なし */
-[残りのスタイルをここに配置]
