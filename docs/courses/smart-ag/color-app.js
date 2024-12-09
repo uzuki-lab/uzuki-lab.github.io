@@ -97,13 +97,17 @@ function setCanvasSize(canvas, width, height) {
 function updateSliderValues() {
     const hueMin = document.getElementById('hueMinSlider').value;
     const hueMax = document.getElementById('hueMaxSlider').value;
-    const sat = document.getElementById('satSlider').value;
-    const val = document.getElementById('valSlider').value;
+    const satMin = document.getElementById('satMinSlider').value;
+    const satMax = document.getElementById('satMaxSlider').value;
+    const valMin = document.getElementById('valMinSlider').value;
+    const valMax = document.getElementById('valMaxSlider').value;
 
     document.getElementById('hueMinValue').textContent = `${hueMin}°`;
     document.getElementById('hueMaxValue').textContent = `${hueMax}°`;
-    document.getElementById('satValue').textContent = sat;
-    document.getElementById('valValue').textContent = val;
+    document.getElementById('satMinValue').textContent = satMin;
+    document.getElementById('satMaxValue').textContent = satMax;
+    document.getElementById('valMinValue').textContent = valMin;
+    document.getElementById('valMaxValue').textContent = valMax;
 }
 
 // 画像処理関数
@@ -118,8 +122,10 @@ function processImage() {
     
     const hueMin = parseInt(document.getElementById('hueMinSlider').value);
     const hueMax = parseInt(document.getElementById('hueMaxSlider').value);
-    const satThreshold = parseInt(document.getElementById('satSlider').value);
-    const valThreshold = parseInt(document.getElementById('valSlider').value);
+    const satMin = parseInt(document.getElementById('satMinSlider').value);
+    const satMax = parseInt(document.getElementById('satMaxSlider').value);
+    const valMin = parseInt(document.getElementById('valMinSlider').value);
+    const valMax = parseInt(document.getElementById('valMaxSlider').value);
 
     for (let i = 0; i < imageData.data.length; i += 4) {
         const r = imageData.data[i];
@@ -128,14 +134,17 @@ function processImage() {
         
         const hsv = rgbToHsv(r, g, b);
         
-        let inRange;
+        let hueInRange;
         if (hueMin <= hueMax) {
-            inRange = hsv.h >= hueMin && hsv.h <= hueMax;
+            hueInRange = hsv.h >= hueMin && hsv.h <= hueMax;
         } else {
-            inRange = hsv.h >= hueMin || hsv.h <= hueMax;
+            hueInRange = hsv.h >= hueMin || hsv.h <= hueMax;
         }
         
-        if (inRange && hsv.s >= satThreshold && hsv.v >= valThreshold) {
+        const satInRange = hsv.s >= satMin && hsv.s <= satMax;
+        const valInRange = hsv.v >= valMin && hsv.v <= valMax;
+        
+        if (hueInRange && satInRange && valInRange) {
             resultImageData.data[i] = r;     // R
             resultImageData.data[i + 1] = g; // G
             resultImageData.data[i + 2] = b; // B
@@ -177,8 +186,10 @@ colorWheel.addEventListener('click', (e) => {
 document.getElementById('greenButton').addEventListener('click', () => {
     document.getElementById('hueMinSlider').value = 60;
     document.getElementById('hueMaxSlider').value = 180;
-    document.getElementById('satSlider').value = 30;
-    document.getElementById('valSlider').value = 30;
+    document.getElementById('satMinSlider').value = 30;
+    document.getElementById('satMaxSlider').value = 100;
+    document.getElementById('valMinSlider').value = 30;
+    document.getElementById('valMaxSlider').value = 100;
     updateSliderValues();
     processImage();
 });
@@ -186,8 +197,10 @@ document.getElementById('greenButton').addEventListener('click', () => {
 document.getElementById('redButton').addEventListener('click', () => {
     document.getElementById('hueMinSlider').value = 330;
     document.getElementById('hueMaxSlider').value = 30;
-    document.getElementById('satSlider').value = 30;
-    document.getElementById('valSlider').value = 30;
+    document.getElementById('satMinSlider').value = 30;
+    document.getElementById('satMaxSlider').value = 100;
+    document.getElementById('valMinSlider').value = 30;
+    document.getElementById('valMaxSlider').value = 100;
     updateSliderValues();
     processImage();
 });
@@ -195,14 +208,18 @@ document.getElementById('redButton').addEventListener('click', () => {
 document.getElementById('yellowButton').addEventListener('click', () => {
     document.getElementById('hueMinSlider').value = 30;
     document.getElementById('hueMaxSlider').value = 90;
-    document.getElementById('satSlider').value = 30;
-    document.getElementById('valSlider').value = 30;
+    document.getElementById('satMinSlider').value = 30;
+    document.getElementById('satMaxSlider').value = 100;
+    document.getElementById('valMinSlider').value = 30;
+    document.getElementById('valMaxSlider').value = 100;
     updateSliderValues();
     processImage();
 });
 
 // スライダーのイベントリスナー設定
-['hueMinSlider', 'hueMaxSlider', 'satSlider', 'valSlider'].forEach(id => {
+['hueMinSlider', 'hueMaxSlider', 
+ 'satMinSlider', 'satMaxSlider', 
+ 'valMinSlider', 'valMaxSlider'].forEach(id => {
     const slider = document.getElementById(id);
     slider.addEventListener('input', () => {
         updateSliderValues();
@@ -218,8 +235,21 @@ window.addEventListener('load', () => {
     
     // テスト画像の読み込み
     const img = new Image();
-    img.src = '/assets/images/smart-ag/color_test_image.jpg';
+    
+    // エラーハンドリングの追加
+    img.onerror = (e) => {
+        console.error('画像の読み込みに失敗しました:', e);
+        // 代替パスを試す
+        if (img.src.includes('../../')) {
+            console.log('代替パスで再試行します');
+            img.src = 'assets/images/smart-ag/color_test_image.jpg';
+        } else if (img.src.includes('assets/')) {
+            img.src = '/assets/images/smart-ag/color_test_image.jpg';
+        }
+    };
+
     img.onload = () => {
+        console.log('画像が正常に読み込まれました');
         // アスペクト比を保持してキャンバスサイズを設定
         const ratio = setCanvasSize(sourceCanvas, img.width, img.height);
         setCanvasSize(resultCanvas, img.width, img.height);
@@ -229,6 +259,9 @@ window.addEventListener('load', () => {
         ctx.drawImage(img, 0, 0, sourceCanvas.width, sourceCanvas.height);
         processImage();
     };
+
+    // 最初のパスで試行
+    img.src = '../../assets/images/smart-ag/color_test_image.jpg';
     
     updateSliderValues();
 });
