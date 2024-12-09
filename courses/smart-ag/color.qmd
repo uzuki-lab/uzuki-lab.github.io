@@ -6,48 +6,39 @@ format:
 include-after: |
   <script src="color-app.js"></script>
 ---
+
 HSV色空間を用いた特定色の抽出を行う対話的な学習ツールです
 
 :::::::: instructions
 ## 📚 システムの使い方
-
 ::::::: instructions-grid
 ::: instruction-step
 ### 1. 色の選択方法（3通り）
-
 以下の3つの方法から、抽出したい色を選択できます：
-
 - HSV色相環をクリック
 - 色相範囲(H)、彩度範囲(S)、明度範囲(V)のスライダーを調整
 - プリセットボタン（緑色抽出、赤色抽出、黄色抽出）を使用
 :::
-
 ::: instruction-step
 ### 2. 色の許容範囲の調整
-
-色相、彩度、明度のスライダーで抽出する色の範囲を微調整します。
+色相、彩度、明度それぞれについて最小値と最大値を設定して、抽出する色の範囲を調整します。
 :::
-
 ::: instruction-step
 ### 3. プリセットの活用
-
 緑色抽出は葉の判定に、赤色抽出は果実の判定に利用できます。
 :::
-
 ::: instruction-step
 ### 4. 結果の確認
-
 抽出結果を確認し、必要に応じて各パラメータを微調整します。
 :::
-
-:::
+:::::::
+::::::::
 
 ::: {.image-processing-container}
 ::: {.canvas-container}
 [元画像]{.canvas-label}
 <canvas id="sourceCanvas"></canvas>
 :::
-
 ::: {.canvas-container}
 [フィルタリング結果]{.canvas-label}
 <canvas id="resultCanvas"></canvas>
@@ -61,31 +52,37 @@ HSV色空間を用いた特定色の抽出を行う対話的な学習ツール�
 <canvas id="colorWheel"></canvas>
 <div id="selectedColor" class="value-display">選択色: H:0° S:100% V:100%</div>
 :::
-
 ::: {.controls}
 ::: {.slider-container}
 ### 色相範囲 (H)
 ::: {.hue-sliders}
-**最小値** <span id="hueMinValue" class="value-display">0°</span>
+最小値 <span id="hueMinValue" class="value-display">0°</span>
 <input type="range" id="hueMinSlider" min="0" max="360" value="0">
 
-**最大値** <span id="hueMaxValue" class="value-display">60°</span>
+最大値 <span id="hueMaxValue" class="value-display">60°</span>
 <input type="range" id="hueMaxSlider" min="0" max="360" value="60">
 :::
 :::
-
 ::: {.slider-container}
 ### 彩度範囲 (S)
-<span id="satValue" class="value-display">50</span>
-<input type="range" id="satSlider" min="0" max="100" value="50">
-:::
+::: {.sat-sliders}
+最小値 <span id="satMinValue" class="value-display">0</span>
+<input type="range" id="satMinSlider" min="0" max="100" value="30">
 
+最大値 <span id="satMaxValue" class="value-display">100</span>
+<input type="range" id="satMaxSlider" min="0" max="100" value="100">
+:::
+:::
 ::: {.slider-container}
 ### 明度範囲 (V)
-<span id="valValue" class="value-display">50</span>
-<input type="range" id="valSlider" min="0" max="100" value="50">
-:::
+::: {.val-sliders}
+最小値 <span id="valMinValue" class="value-display">0</span>
+<input type="range" id="valMinSlider" min="0" max="100" value="30">
 
+最大値 <span id="valMaxValue" class="value-display">100</span>
+<input type="range" id="valMaxSlider" min="0" max="100" value="100">
+:::
+:::
 ::: {.preset-buttons}
 <button id="greenButton">緑色抽出</button>
 <button id="redButton">赤色抽出</button>
