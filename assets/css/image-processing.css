@@ -131,3 +131,109 @@ select, input[type="range"] {
     flex-grow: 1;
     max-width: 400px;
 }
+
+
+/* Sobelフィルター学習ツール用のスタイル */
+.sobel-learning-section {
+    margin: 3rem 0;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.sobel-container {
+    margin: 2rem 0;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+.sobel-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 4px;
+    width: 320px;
+    margin-bottom: 2rem;
+}
+
+.sobel-cell {
+    height: 48px;
+    width: 48px;
+    border: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobel-cell.input-cell {
+    cursor: pointer;
+}
+
+.sobel-cell.input-cell:hover {
+    background-color: #e9ecef;
+}
+
+.sobel-cell.selected {
+    border: 2px solid #4299e1;
+}
+
+.kernel-container {
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0;
+}
+
+.kernel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    width: 96px;
+}
+
+.kernel-cell {
+    height: 24px;
+    width: 24px;
+    border: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+}
+
+.calculation {
+    padding: 0.5rem;
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.grid-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.grid-title {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.kernel-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        flex-direction: column;
+    }
+    
+    .kernel-container {
+        flex-direction: column;
+    }
+}

@@ -6,6 +6,7 @@ format:
     include-in-header:
       - text: |
           <script src="edge-app.js" defer></script>
+          <script src="sobel-learning-tool.js" defer></script>
 ---
 
 ::: {.content-container}
@@ -99,5 +100,30 @@ SobelフィルタとPrewittフィルタから選択できます。それぞれ�
 感度調整：
 <input type="range" id="sensitivity" min="0" max="100" value="50">
 <span id="sensitivityValue">50</span>
+:::
+:::
+
+
+::: {.sobel-learning-section}
+## 🔍 Sobelフィルターの仕組みを学ぶ
+
+::: {.callout-note}
+## 学習のポイント
+Sobelフィルターがどのように画像のエッジを検出するのか、実際の計算過程を確認しながら学びましょう。
+:::
+
+::: {.sobel-interactive}
+### 対話的な学習ツール
+入力画像のグリッドのセルをクリックすると、そのセルを中心としたSobelフィルターの計算過程が表示されます。
+
+::: {#sobelApp .sobel-container}
+<!-- JavaScriptによって動的に生成される内容 -->
+:::
+
+::: {.sobel-instructions}
+1. 入力画像のグリッドから任意のセルをクリックします
+2. 横方向・縦方向のフィルター計算過程を確認します
+3. 各方向の結果と最終的な合成結果を比較します
+:::
 :::
 :::
