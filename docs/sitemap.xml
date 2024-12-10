@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://uzuki-lab.com/about.html</loc>
-    <lastmod>2024-12-06T14:51:01.780Z</lastmod>
-  </url>
-  <url>
-    <loc>https://uzuki-lab.com/index.html</loc>
-    <lastmod>2024-12-06T14:51:01.791Z</lastmod>
-  </url>
-  <url>
-    <loc>https://uzuki-lab.com/courses/smart-ag/edge.html</loc>
-    <lastmod>2024-12-06T14:51:01.783Z</lastmod>
+    <loc>https://uzuki-lab.com/courses/index.html</loc>
+    <lastmod>2024-12-03T03:54:04.507Z</lastmod>
   </url>
   <url>
     <loc>https://uzuki-lab.com/courses/smart-ag/binarization.html</loc>
-    <lastmod>2024-12-06T14:51:01.783Z</lastmod>
-  </url>
-  <url>
-    <loc>https://uzuki-lab.com/courses/smart-ag/spectral.html</loc>
-    <lastmod>2024-12-06T14:51:01.783Z</lastmod>
-  </url>
-  <url>
-    <loc>https://uzuki-lab.com/courses/index.html</loc>
-    <lastmod>2024-12-06T14:51:01.783Z</lastmod>
-  </url>
-  <url>
-    <loc>https://uzuki-lab.com/courses/smart-ag/color.html</loc>
-    <lastmod>2024-12-09T14:13:35.305Z</lastmod>
+    <lastmod>2024-12-04T06:28:09.155Z</lastmod>
   </url>
   <url>
     <loc>https://uzuki-lab.com/courses/smart-ag/index.html</loc>
-    <lastmod>2024-12-06T14:51:01.783Z</lastmod>
+    <lastmod>2024-12-04T06:24:08.217Z</lastmod>
+  </url>
+  <url>
+    <loc>https://uzuki-lab.com/index.html</loc>
+    <lastmod>2024-12-04T07:01:15.534Z</lastmod>
+  </url>
+  <url>
+    <loc>https://uzuki-lab.com/about.html</loc>
+    <lastmod>2024-12-02T07:06:44.287Z</lastmod>
+  </url>
+  <url>
+    <loc>https://uzuki-lab.com/courses/smart-ag/spectral.html</loc>
+    <lastmod>2024-12-03T03:54:04.507Z</lastmod>
+  </url>
+  <url>
+    <loc>https://uzuki-lab.com/courses/smart-ag/edge.html</loc>
+    <lastmod>2024-12-04T07:03:01.386Z</lastmod>
+  </url>
+  <url>
+    <loc>https://uzuki-lab.com/courses/smart-ag/color.html</loc>
+    <lastmod>2024-12-10T01:04:00.930Z</lastmod>
   </url>
 </urlset>

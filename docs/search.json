@@ -1,10 +1,106 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "courses/r-course/index.html",
+    "href": "courses/r-course/index.html",
+    "title": "Ｒ講座",
     "section": "",
-    "text": "About this site"
+    "text": "1 絶賛工事中！",
+    "crumbs": [
+      "研究",
+      "講義",
+      "Ｒ講座"
+    ]
+  },
+  {
+    "objectID": "courses/index.html",
+    "href": "courses/index.html",
+    "title": "講義",
+    "section": "",
+    "text": "1 講義\n\n栽培施設学 栽培施設学\nスマート農業 スマート農業\nR講座 R講座\n統計講座 統計講座"
+  },
+  {
+    "objectID": "courses/smart-ag/binarization.html",
+    "href": "courses/smart-ag/binarization.html",
+    "title": "スマート農業のための画像処理(基礎)・二値化処理",
+    "section": "",
+    "text": "画像の二値化処理を学ぶための対話的な学習ツールです",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "2値化処理"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/binarization.html#アプリの使い方",
+    "href": "courses/smart-ag/binarization.html#アプリの使い方",
+    "title": "スマート農業のための画像処理(基礎)・二値化処理",
+    "section": "1 📚 アプリの使い方",
+    "text": "1 📚 アプリの使い方\n\n\n1.1 1. 画像の観察\n左側の元画像をよく観察してください。この画像がどのような明暗の特徴を持っているか確認しましょう。\n\n\n1.2 2. ヒストグラムの確認\nヒストグラムで画像の明るさの分布を確認します。山が2つある場合は、二値化に適している目安となります。\n\n\n1.3 3. 閾値の調整\nスライダーを動かして二値化の閾値を調整します。結果を観察しながら、最適な値を探してみましょう。\n\n\n1.4 4. 結果の評価\n二値化された画像を確認し、目的に応じて適切な閾値が設定できているか評価します。",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "2値化処理"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/index.html",
+    "href": "courses/smart-ag/index.html",
+    "title": "スマート農業",
+    "section": "",
+    "text": "スマート農業は、ICTやロボット技術を活用して農業の効率化や高度化を実現する新しい農業の形です。\n\n\nこのコースでは、スマート農業に用いられる画像処理と分光分析の基礎について学びます。\n\n2値化処理 形状認識や面積計算に用いられる画像の2値化処理について学びます\nカラー画像の仕組み カラー画像処理の基礎としてRGB色空間やHSV色空間について学びます\nエッジ検出 物体検出や位置測定に使われるエッジ検出について学びます\n分光分析 植物の生育状態を分析するための分光分析手法について学びます\n\n\n\n\n\nWebブラウザ\nノート、筆記用具",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "概要"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/index.html#講義内容",
+    "href": "courses/smart-ag/index.html#講義内容",
+    "title": "スマート農業",
+    "section": "",
+    "text": "このコースでは、スマート農業に用いられる画像処理と分光分析の基礎について学びます。\n\n2値化処理 形状認識や面積計算に用いられる画像の2値化処理について学びます\nカラー画像の仕組み カラー画像処理の基礎としてRGB色空間やHSV色空間について学びます\nエッジ検出 物体検出や位置測定に使われるエッジ検出について学びます\n分光分析 植物の生育状態を分析するための分光分析手法について学びます",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "概要"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/index.html#準備するもの",
+    "href": "courses/smart-ag/index.html#準備するもの",
+    "title": "スマート農業",
+    "section": "",
+    "text": "Webブラウザ\nノート、筆記用具",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "概要"
+    ]
+  },
+  {
+    "objectID": "courses/facility/index.html",
+    "href": "courses/facility/index.html",
+    "title": "栽培施設学",
+    "section": "",
+    "text": "1 絶賛工事中！",
+    "crumbs": [
+      "研究",
+      "講義",
+      "栽培施設学"
+    ]
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "研究",
+    "section": "",
+    "text": "絶賛工事中！"
   },
   {
     "objectID": "index.html",
@@ -35,56 +131,11 @@
     "text": "研究活動の詳細はこちら"
   },
   {
-    "objectID": "courses/smart-ag/edge.html",
-    "href": "courses/smart-ag/edge.html",
-    "title": "スマート農業のための画像処理(基礎)・エッジ検出",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "エッジ検出処理を学ぶための対話的な学習ツールです\n\n\n\n\n\n\n左側の元画像をよく観察してください。この画像の中で、エッジとして検出したい部分を確認しましょう。\n\n\n\nSobelフィルタとPrewittフィルタから選択できます。それぞれの特徴を理解しながら使い分けてみましょう。\n\n\n\nスライダーを動かしてエッジ検出の感度を調整します。結果を観察しながら、最適な値を探してみましょう。\n\n\n\n\n\n\n元画像\n\n\n\n\n\n\nエッジ検出結果\n\n\n\n\n\n\n\nフィルタの種類：  Sobelフィルタ Prewittフィルタ \n\n\n\n横方向フィルタ\n\n\n\n\n-1\n0\n1\n\n\n\n\n-2\n0\n2\n\n\n-1\n0\n1\n\n\n\n\n横方向のエッジを検出\n\n\n\n\n縦方向フィルタ\n\n\n\n\n-1\n-2\n-1\n\n\n\n\n0\n0\n0\n\n\n1\n2\n1\n\n\n\n\n縦方向のエッジを検出\n\n\n\n\n\n感度調整：  50",
-    "crumbs": [
-      "研究",
-      "講義",
-      "スマート農業",
-      "エッジ検出"
-    ]
-  },
-  {
-    "objectID": "courses/smart-ag/edge.html#システムの使い方",
-    "href": "courses/smart-ag/edge.html#システムの使い方",
-    "title": "スマート農業のための画像処理(基礎)・エッジ検出",
-    "section": "",
-    "text": "左側の元画像をよく観察してください。この画像の中で、エッジとして検出したい部分を確認しましょう。\n\n\n\nSobelフィルタとPrewittフィルタから選択できます。それぞれの特徴を理解しながら使い分けてみましょう。\n\n\n\nスライダーを動かしてエッジ検出の感度を調整します。結果を観察しながら、最適な値を探してみましょう。",
-    "crumbs": [
-      "研究",
-      "講義",
-      "スマート農業",
-      "エッジ検出"
-    ]
-  },
-  {
-    "objectID": "courses/smart-ag/binarization.html",
-    "href": "courses/smart-ag/binarization.html",
-    "title": "スマート農業のための画像処理(基礎)・二値化処理",
-    "section": "",
-    "text": "画像の二値化処理を学ぶための対話的な学習ツールです",
-    "crumbs": [
-      "研究",
-      "講義",
-      "スマート農業",
-      "2値化処理"
-    ]
-  },
-  {
-    "objectID": "courses/smart-ag/binarization.html#アプリの使い方",
-    "href": "courses/smart-ag/binarization.html#アプリの使い方",
-    "title": "スマート農業のための画像処理(基礎)・二値化処理",
-    "section": "1 📚 アプリの使い方",
-    "text": "1 📚 アプリの使い方\n\n\n1.1 1. 画像の観察\n左側の元画像をよく観察してください。この画像がどのような明暗の特徴を持っているか確認しましょう。\n\n\n1.2 2. ヒストグラムの確認\nヒストグラムで画像の明るさの分布を確認します。山が2つある場合は、二値化に適している目安となります。\n\n\n1.3 3. 閾値の調整\nスライダーを動かして二値化の閾値を調整します。結果を観察しながら、最適な値を探してみましょう。\n\n\n1.4 4. 結果の評価\n二値化された画像を確認し、目的に応じて適切な閾値が設定できているか評価します。",
-    "crumbs": [
-      "研究",
-      "講義",
-      "スマート農業",
-      "2値化処理"
-    ]
+    "text": "About this site"
   },
   {
     "objectID": "courses/smart-ag/spectral.html",
@@ -139,35 +190,30 @@
     ]
   },
   {
-    "objectID": "courses/stats/index.html",
-    "href": "courses/stats/index.html",
-    "title": "統計の基礎",
+    "objectID": "courses/smart-ag/edge.html",
+    "href": "courses/smart-ag/edge.html",
+    "title": "スマート農業のための画像処理(基礎)・エッジ検出",
     "section": "",
-    "text": "1 絶賛工事中！",
+    "text": "エッジ検出処理を学ぶための対話的な学習ツールです\n\n\n\n\n\n\n左側の元画像をよく観察してください。この画像の中で、エッジとして検出したい部分を確認しましょう。\n\n\n\nSobelフィルタとPrewittフィルタから選択できます。それぞれの特徴を理解しながら使い分けてみましょう。\n\n\n\nスライダーを動かしてエッジ検出の感度を調整します。結果を観察しながら、最適な値を探してみましょう。\n\n\n\n\n\n\n元画像\n\n\n\n\n\n\nエッジ検出結果\n\n\n\n\n\n\n\nフィルタの種類：  Sobelフィルタ Prewittフィルタ \n\n\n\n横方向フィルタ\n\n\n\n\n-1\n0\n1\n\n\n\n\n-2\n0\n2\n\n\n-1\n0\n1\n\n\n\n\n横方向のエッジを検出\n\n\n\n\n縦方向フィルタ\n\n\n\n\n-1\n-2\n-1\n\n\n\n\n0\n0\n0\n\n\n1\n2\n1\n\n\n\n\n縦方向のエッジを検出\n\n\n\n\n\n感度調整：  50",
     "crumbs": [
       "研究",
       "講義",
-      "統計基礎"
+      "スマート農業",
+      "エッジ検出"
     ]
   },
   {
-    "objectID": "courses/facility/index.html",
-    "href": "courses/facility/index.html",
-    "title": "栽培施設学",
+    "objectID": "courses/smart-ag/edge.html#システムの使い方",
+    "href": "courses/smart-ag/edge.html#システムの使い方",
+    "title": "スマート農業のための画像処理(基礎)・エッジ検出",
     "section": "",
-    "text": "1 絶賛工事中！",
+    "text": "左側の元画像をよく観察してください。この画像の中で、エッジとして検出したい部分を確認しましょう。\n\n\n\nSobelフィルタとPrewittフィルタから選択できます。それぞれの特徴を理解しながら使い分けてみましょう。\n\n\n\nスライダーを動かしてエッジ検出の感度を調整します。結果を観察しながら、最適な値を探してみましょう。",
     "crumbs": [
       "研究",
       "講義",
-      "栽培施設学"
+      "スマート農業",
+      "エッジ検出"
     ]
-  },
-  {
-    "objectID": "courses/index.html",
-    "href": "courses/index.html",
-    "title": "講義",
-    "section": "",
-    "text": "1 講義\n\n栽培施設学 栽培施設学\nスマート農業 スマート農業\nR講座 R講座\n統計講座 統計講座"
   },
   {
     "objectID": "courses/smart-ag/color.html",
@@ -196,61 +242,15 @@
     ]
   },
   {
-    "objectID": "courses/smart-ag/index.html",
-    "href": "courses/smart-ag/index.html",
-    "title": "スマート農業",
-    "section": "",
-    "text": "スマート農業は、ICTやロボット技術を活用して農業の効率化や高度化を実現する新しい農業の形です。\n\n\nこのコースでは、スマート農業に用いられる画像処理と分光分析の基礎について学びます。\n\n2値化処理 形状認識や面積計算に用いられる画像の2値化処理について学びます\nカラー画像の仕組み カラー画像処理の基礎としてRGB色空間やHSV色空間について学びます\nエッジ検出 物体検出や位置測定に使われるエッジ検出について学びます\n分光分析 植物の生育状態を分析するための分光分析手法について学びます\n\n\n\n\n\nWebブラウザ\nノート、筆記用具",
-    "crumbs": [
-      "研究",
-      "講義",
-      "スマート農業",
-      "概要"
-    ]
-  },
-  {
-    "objectID": "courses/smart-ag/index.html#講義内容",
-    "href": "courses/smart-ag/index.html#講義内容",
-    "title": "スマート農業",
-    "section": "",
-    "text": "このコースでは、スマート農業に用いられる画像処理と分光分析の基礎について学びます。\n\n2値化処理 形状認識や面積計算に用いられる画像の2値化処理について学びます\nカラー画像の仕組み カラー画像処理の基礎としてRGB色空間やHSV色空間について学びます\nエッジ検出 物体検出や位置測定に使われるエッジ検出について学びます\n分光分析 植物の生育状態を分析するための分光分析手法について学びます",
-    "crumbs": [
-      "研究",
-      "講義",
-      "スマート農業",
-      "概要"
-    ]
-  },
-  {
-    "objectID": "courses/smart-ag/index.html#準備するもの",
-    "href": "courses/smart-ag/index.html#準備するもの",
-    "title": "スマート農業",
-    "section": "",
-    "text": "Webブラウザ\nノート、筆記用具",
-    "crumbs": [
-      "研究",
-      "講義",
-      "スマート農業",
-      "概要"
-    ]
-  },
-  {
-    "objectID": "courses/r-course/index.html",
-    "href": "courses/r-course/index.html",
-    "title": "Ｒ講座",
+    "objectID": "courses/stats/index.html",
+    "href": "courses/stats/index.html",
+    "title": "統計の基礎",
     "section": "",
     "text": "1 絶賛工事中！",
     "crumbs": [
       "研究",
       "講義",
-      "Ｒ講座"
+      "統計基礎"
     ]
-  },
-  {
-    "objectID": "research/index.html",
-    "href": "research/index.html",
-    "title": "研究",
-    "section": "",
-    "text": "絶賛工事中！"
   }
 ]
