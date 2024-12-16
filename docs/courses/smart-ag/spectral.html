@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>分光分析 – Uzuki-Lab</title>
+<title>分光分析の基礎 – Uzuki-Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,7 +67,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "サーチ"
   }
 }</script>
-<script src="app.js"></script>
 
 
 <link rel="stylesheet" href="../../assets/css/styles.css">
@@ -105,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../courses/facility/index.html">講義</a></li><li class="breadcrumb-item"><a href="../../courses/smart-ag/index.html">スマート農業</a></li><li class="breadcrumb-item"><a href="../../courses/smart-ag/spectral.html">分光分析</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">分光分析の基礎</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="サイドバーを切り替える" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="サーチ" onclick="window.quartoOpenSearch();">
@@ -115,7 +114,7 @@ ul.task-list li input[type="checkbox"] {
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
         <div class="mt-2 flex-shrink-0 align-items-center">
@@ -140,13 +139,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
  <span class="menu-text">スマート農業</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="セクションを切り替え">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="セクションを切り替え">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../courses/smart-ag/index.html" class="sidebar-item-text sidebar-link">
@@ -173,8 +172,14 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../courses/smart-ag/spectral.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">分光分析</span></a>
+  <a href="../../courses/smart-ag/spectro-basic.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">分光分析・基礎</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../courses/smart-ag/spectro-application.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">分光分析・農業への応用</span></a>
   </div>
 </li>
       </ul>
@@ -199,28 +204,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">目次</h2>
    
   <ul>
-  <li><a href="#分光分析とは" id="toc-分光分析とは" class="nav-link active" data-scroll-target="#分光分析とは"><span class="header-section-number">1</span> 分光分析とは</a></li>
-  <li><a href="#インタラクティブデモ" id="toc-インタラクティブデモ" class="nav-link" data-scroll-target="#インタラクティブデモ"><span class="header-section-number">2</span> インタラクティブデモ</a></li>
-  <li><a href="#解説" id="toc-解説" class="nav-link" data-scroll-target="#解説"><span class="header-section-number">3</span> 解説</a>
-  <ul class="collapse">
-  <li><a href="#基本原理" id="toc-基本原理" class="nav-link" data-scroll-target="#基本原理"><span class="header-section-number">3.1</span> 基本原理</a></li>
-  <li><a href="#農業での応用例" id="toc-農業での応用例" class="nav-link" data-scroll-target="#農業での応用例"><span class="header-section-number">3.2</span> 農業での応用例</a></li>
-  <li><a href="#データ解析手法" id="toc-データ解析手法" class="nav-link" data-scroll-target="#データ解析手法"><span class="header-section-number">3.3</span> データ解析手法</a></li>
-  </ul></li>
+  <li><a href="#光の干渉二重スリット実験" id="toc-光の干渉二重スリット実験" class="nav-link active" data-scroll-target="#光の干渉二重スリット実験"><span class="header-section-number">1</span> 1. 光の干渉：二重スリット実験</a></li>
+  <li><a href="#分光器の仕組み" id="toc-分光器の仕組み" class="nav-link" data-scroll-target="#分光器の仕組み"><span class="header-section-number">2</span> 2. 分光器の仕組み</a></li>
+  <li><a href="#ランベルトベールの法則" id="toc-ランベルトベールの法則" class="nav-link" data-scroll-target="#ランベルトベールの法則"><span class="header-section-number">3</span> 3. ランベルト・ベールの法則</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-body" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../courses/facility/index.html">講義</a></li><li class="breadcrumb-item"><a href="../../courses/smart-ag/index.html">スマート農業</a></li><li class="breadcrumb-item"><a href="../../courses/smart-ag/spectral.html">分光分析</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">分光分析</h1>
+<h1 class="title">分光分析の基礎</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-body">
+<div class="quarto-title-meta">
 
     
   
@@ -232,44 +232,61 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="分光分析とは" class="level2" data-number="1">
-<h2 data-number="1" class="anchored" data-anchor-id="分光分析とは"><span class="header-section-number">1</span> 分光分析とは</h2>
-<p>分光分析は、物質と光の相互作用を利用して対象物の特性を分析する手法です。 農業分野では、作物の生育状態診断や品質評価などに活用されています。</p>
+<link rel="stylesheet" href="../../assets/css/spectro.css">
+<section id="光の干渉二重スリット実験" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="光の干渉二重スリット実験"><span class="header-section-number">1</span> 1. 光の干渉：二重スリット実験</h2>
+<p>光の波としての性質を理解するための基本的な実験である二重スリット実験について学びます。</p>
+<div class="app-description">
+<p>このシミュレーターでは、二重スリットによる光の干渉パターンを観察できます。波長とスリット間隔を変更することで、干渉縞の変化を確認できます。</p>
+<section id="使い方" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="使い方"><span class="header-section-number">1.1</span> 使い方</h3>
+<ul>
+<li>波長スライダー：380-750nmの範囲で波長を調整できます</li>
+<li>スリット間隔スライダー：500-2000nmの範囲でスリット間隔を調整できます</li>
+<li>スクリーン上の明暗の縞模様は、光の干渉による強め合いと弱め合いを表しています</li>
+</ul>
 </section>
-<section id="インタラクティブデモ" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="インタラクティブデモ"><span class="header-section-number">2</span> インタラクティブデモ</h2>
-<div id="spectral-app">
-
 </div>
+<iframe src="double-slit-html.html" class="spectro-iframe"></iframe>
 </section>
-<section id="解説" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="解説"><span class="header-section-number">3</span> 解説</h2>
-<section id="基本原理" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="基本原理"><span class="header-section-number">3.1</span> 基本原理</h3>
+<section id="分光器の仕組み" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="分光器の仕組み"><span class="header-section-number">2</span> 2. 分光器の仕組み</h2>
+<p>回折格子を用いた分光器の基本的な仕組みについて学びます。</p>
+<div class="app-description">
+<p>このシミュレーターでは、回折格子による光の分光の仕組みを観察できます。波長に応じて光が異なる角度に回折される様子を確認できます。</p>
+<section id="使い方-1" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="使い方-1"><span class="header-section-number">2.1</span> 使い方</h3>
 <ul>
-<li>光の波長と物質の相互作用</li>
-<li>反射・透過・吸収スペクトル</li>
-<li>スペクトルデータの解釈</li>
+<li>波長スライダー：380-780nmの範囲で入射光の波長を変更できます</li>
+<li>回折格子の回転角が自動的に調整され、選択した波長の光が検出器に到達するようになります</li>
+<li>光路の色は波長に対応した可視光の色で表示されます</li>
 </ul>
 </section>
-<section id="農業での応用例" class="level3" data-number="3.2">
-<h3 data-number="3.2" class="anchored" data-anchor-id="農業での応用例"><span class="header-section-number">3.2</span> 農業での応用例</h3>
+</div>
+<iframe src="spectrometer-html.html" class="spectro-iframe"></iframe>
+</section>
+<section id="ランベルトベールの法則" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="ランベルトベールの法則"><span class="header-section-number">3</span> 3. ランベルト・ベールの法則</h2>
+<p>物質による光の吸収を定量的に理解するためのランベルト・ベールの法則について学びます。</p>
+<div class="app-description">
+<p>このシミュレーターでは、試料による光の吸収を観察できます。試料の種類、濃度、光路長を変更することで、吸光度と透過率の変化を確認できます。</p>
+<section id="使い方-2" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="使い方-2"><span class="header-section-number">3.1</span> 使い方</h3>
 <ul>
-<li>葉の窒素含有量の推定</li>
-<li>果実の糖度推定</li>
-<li>土壌水分の計測</li>
+<li>試料選択：クロロフィル、カロテン、アントシアニンから選択できます</li>
+<li>波長スライダー：380-700nmの範囲で入射光の波長を調整できます</li>
+<li>濃度スライダー：試料濃度を0-2の範囲で調整できます</li>
+<li>光路長：5mmまたは10mmを選択できます</li>
+<li>グラフには各試料の吸収スペクトルが表示されます</li>
 </ul>
 </section>
-<section id="データ解析手法" class="level3" data-number="3.3">
-<h3 data-number="3.3" class="anchored" data-anchor-id="データ解析手法"><span class="header-section-number">3.3</span> データ解析手法</h3>
-<ul>
-<li>スペクトル前処理</li>
-<li>多変量解析</li>
-<li>機械学習による解析</li>
-</ul>
+</div>
+<iframe src="lambert-beer-plain.html" class="spectro-iframe"></iframe>
+<div class="nav-links">
+<p><a href="../../courses/smart-ag/spectro-application">次のページ：分光分析の応用</a></p>
+</div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
