@@ -1,5 +1,6 @@
 ---
 title: "分光分析の基礎"
+draft: true 
 ---
 
 ```{=html}

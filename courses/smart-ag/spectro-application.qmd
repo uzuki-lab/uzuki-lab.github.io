@@ -3,6 +3,7 @@ title: "分光分析の農業応用"
 author: "Smart Agriculture Lab"
 date: last-modified
 css: /assets/css/spectral-analysis.css
+draft: true 
 ---
 
 ## はじめに
