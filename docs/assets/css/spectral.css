@@ -1,0 +1,107 @@
+/* Common styles */
+.spectral-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #f3f4f6;
+}
+
+.control-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+.button-group {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 8px 16px;
+    margin-right: 8px;
+    border: 1px solid #e5e7eb;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button.selected {
+    background-color: #3b82f6;
+    color: white;
+    border-color: #2563eb;
+}
+
+/* Control elements */
+.control {
+    margin-bottom: 20px;
+}
+
+.control-label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input[type="range"] {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+/* Simulation display */
+.simulation {
+    height: 200px;
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.light-path {
+    height: 32px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.cuvette {
+    height: 64px;
+    border: 2px solid #e5e7eb;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.light-path-label {
+    position: absolute;
+    top: -24px;
+    left: 0;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* Values display */
+.data-display {
+    margin: 20px 0;
+}
+
+.data-display p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+/* Chart container */
+.chart-container {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#spectrumChart {
+    height: 300px;
+}
+
