@@ -1,0 +1,215 @@
+---
+title: "分光分析の基礎"
+subtitle: "スマート農業のための分光計測入門"
+author: "Uzuki Lab"
+date: last-modified
+---
+
+```{=html}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+<link rel="stylesheet" href="/assets/css/spectral.css">
+```
+
+# はじめに
+
+分光分析は、物質による光の吸収や反射を測定することで、その物質の性質や状態を分析する手法です。農業分野では、作物の生育状態や土壌の性質を非破壊で評価する手段として広く活用されています。
+
+このページでは、分光分析の基本原理について、以下の3つの観点から学びます：
+
+1. 光の干渉現象（二重スリット実験）
+2. 回折格子を用いた分光器の仕組み
+3. ランベルト・ベールの法則と吸光度
+
+# 1. 二重スリット実験：光の干渉
+
+## 原理
+二重スリット実験は、光の波動性を示す最も基本的な実験の一つです。2つの細いスリットを通過した光は干渉し、スクリーン上に明暗の縞模様（干渉縞）を形成します。この現象は以下の要因によって変化します：
+
+- 光の波長
+- スリット間の距離
+- スリットからスクリーンまでの距離
+
+## シミュレーション
+以下のシミュレーターでは、波長とスリット間隔を変更して、干渉パターンの変化を観察できます。
+
+```{=html}
+<div class="spectral-container">
+    <div class="control-section">
+        <div class="control">
+            <label class="control-label">
+                波長: <span id="wavelengthValue">500</span> nm
+                <input type="range" id="wavelength" min="380" max="750" value="500">
+            </label>
+        </div>
+        <div class="control">
+            <label class="control-label">
+                スリット間隔: <span id="spacingValue">1000</span> nm
+                <input type="range" id="slitSpacing" min="500" max="2000" value="1000">
+            </label>
+        </div>
+        <div class="visualization-container">
+            <canvas id="interferenceCanvas"></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="double-slit.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        initializeDoubleSlit();
+    });
+</script>
+```
+
+## 実験のポイント
+1. **波長の影響**: 波長が長くなると干渉縞の間隔が広くなり、短くなると間隔が狭くなります
+2. **スリット間隔の影響**: スリット間隔が広がると干渉縞の間隔が狭くなり、狭まると間隔が広くなります
+3. **色による変化**: 可視光の波長（380-750nm）による干渉パターンの違いを観察できます
+
+# 2. 分光器の仕組み
+
+## 原理
+分光器は、入射した光を波長ごとに分離して測定する装置です。主要な構成要素は以下の通りです：
+
+- 入射スリット：分析する光を導入
+- 回折格子：光を波長ごとに分散
+- 検出器：特定の波長の光強度を測定
+
+## シミュレーション
+このシミュレーターでは、入射光の波長を変えることで、回折格子による分光の仕組みを観察できます。
+
+```{=html}
+<div class="spectral-container">
+    <div class="control-section">
+        <div class="space-y-2">
+            <div>
+                <label class="control-label">波長 (nm)</label>
+                <input
+                    type="range"
+                    min="380"
+                    max="780"
+                    value="500"
+                    id="wavelengthSlider"
+                    class="w-full"
+                />
+                <span class="value-display" id="wavelengthValue">500 nm</span>
+            </div>
+        </div>
+
+        <div class="visualization-container">
+            <svg id="spectrometerSvg" viewBox="0 0 400 400" class="w-full h-96" style="background-color: #4d4d4d;">
+            </svg>
+        </div>
+
+        <div class="data-display">
+            <ul>
+                <li>検出器の位置（固定）: <span id="detectorAngleValue">45</span>°</li>
+                <li>波長: <span id="wavelengthDisplay">500</span> nm</li>
+                <li>格子周期: <span id="gratingPeriodValue">2000</span> nm</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="spectrometer.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        initializeSpectrometer();
+    });
+</script>
+```
+
+## 観察のポイント
+1. **波長による分散**: 波長が変わると回折角が変化します
+2. **検出可能な波長範囲**: 全ての波長が検出器に届くわけではありません
+3. **回折格子の役割**: 入射光を波長ごとに異なる角度に分散させます
+
+# 3. ランベルト・ベールの法則
+
+## 原理
+ランベルト・ベールの法則は、物質による光の吸収を定量的に表す法則です。以下の要因で吸光度が決定されます：
+
+- 物質の吸光係数
+- 試料の濃度
+- 光路長（試料の厚さ）
+
+## シミュレーション
+このシミュレーターでは、異なる色素の吸収スペクトルを観察でき、濃度と光路長による吸光度の変化を確認できます。
+
+```{=html}
+<div class="spectral-container">
+    <div class="control-section">
+        <!-- 試料選択 -->
+        <div id="sample-buttons" class="button-group">
+            <button id="chlorophyll" class="selected">クロロフィル</button>
+            <button id="carotene">カロテン</button>
+            <button id="anthocyanin">アントシアニン</button>
+        </div>
+
+        <!-- キュベット厚さ選択 -->
+        <div id="path-buttons" class="button-group">
+            <button data-path="5" class="selected">5 mm</button>
+            <button data-path="10">10 mm</button>
+        </div>
+
+        <!-- 波長スライダー -->
+        <div class="control">
+            <label class="control-label">波長: <span id="wavelengthValue">550</span> nm</label>
+            <input type="range" id="wavelength" min="380" max="700" value="550">
+        </div>
+
+        <!-- 濃度スライダー -->
+        <div class="control">
+            <label class="control-label">濃度: <span id="concentrationValue">1.00</span></label>
+            <input type="range" id="concentration" min="0" max="2" step="0.1" value="1.0">
+        </div>
+
+        <!-- シミュレーション表示 -->
+        <div class="simulation">
+            <div id="incidentLight" class="light-path">
+                <div class="light-path-label">入射光強度 I0</div>
+            </div>
+            <div id="cuvette" class="cuvette">
+                <div class="light-path-label" id="sampleLabel"></div>
+            </div>
+            <div id="transmittedLight" class="light-path">
+                <div class="light-path-label">透過光強度 I1</div>
+            </div>
+        </div>
+
+        <!-- 測定値表示 -->
+        <div class="data-display">
+            <p>吸光度: <span id="absorbanceValue">0.000</span></p>
+            <p>透過率: <span id="transmittanceValue">0.0</span>%</p>
+        </div>
+
+        <!-- 吸収スペクトル -->
+        <div class="chart-container">
+            <canvas id="spectrumChart"></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="lambert-beer.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        initializeLambertBeer();
+    });
+</script>
+```
+
+## 実験のポイント
+1. **色素による違い**: 各色素特有の吸収スペクトルを観察できます
+2. **濃度の影響**: 濃度が高くなると吸光度が比例して大きくなります
+3. **光路長の影響**: 光路長が長くなると吸光度が比例して大きくなります
+4. **波長依存性**: 吸光度は波長によって異なります
+
+# まとめ
+
+分光分析の基本原理について、3つの重要な側面から学びました：
+
+1. 光の波動性と干渉現象
+2. 回折格子による光の分散
+3. 物質による光の吸収
+
+これらの原理は、作物の生育診断や品質評価など、スマート農業における様々な場面で応用されています。

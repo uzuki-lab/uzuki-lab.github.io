@@ -59,6 +59,3 @@ title: "分光分析の基礎"
 <iframe src="lambert-beer-plain.html" class="spectro-iframe"></iframe>
 ```
 
-::: {.nav-links}
-[次のページ：分光分析の応用](/courses/smart-ag/spectro-application)
-:::

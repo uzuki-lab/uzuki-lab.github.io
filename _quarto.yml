@@ -4,7 +4,7 @@ project:
   resources:
     - "assets/**"
     - "courses/**/*.js"
-
+    
 execute:
   freeze: auto
 
@@ -38,8 +38,8 @@ website:
                 href: courses/smart-ag/color.qmd
               - text: "エッジ検出"
                 href: courses/smart-ag/edge.qmd
-              - text: "分光分析"
-                href: courses/smart-ag/spectral.qmd
+              - text: "分光分析・基礎"
+                href: courses/smart-ag/spectral-analysis.qmd
           - section: "Ｒ講座"
             href: courses/r-course/index.qmd
           - section: "統計基礎"
