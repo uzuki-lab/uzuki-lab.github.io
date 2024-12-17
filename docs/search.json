@@ -1,48 +1,59 @@
 [
   {
-    "objectID": "courses/r-course/index.html",
-    "href": "courses/r-course/index.html",
-    "title": "Ｒ講座",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "1 絶賛工事中！",
-    "crumbs": [
-      "研究",
-      "講義",
-      "Ｒ講座"
-    ]
+    "text": "About this site"
   },
   {
-    "objectID": "courses/index.html",
-    "href": "courses/index.html",
-    "title": "講義",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Uzuki−Lab",
     "section": "",
-    "text": "1 講義\n\n栽培施設学 栽培施設学\nスマート農業 スマート農業\nR講座 R講座\n統計講座 統計講座"
+    "text": "このサイトでは、研究室の活動内容や講義資料を公開しています。でもまあ、作りかけwww\n\n\n\n2024年度時点で多くの部分が絶賛工事中です。\nスマ農だけ大慌てで作っている体たらく・・・\n\n\n\n\n\n栽培施設学\nスマート農業\nR講座\n統計基礎\n\n\n\n\n研究活動の詳細はこちら"
   },
   {
-    "objectID": "courses/smart-ag/binarization.html",
-    "href": "courses/smart-ag/binarization.html",
-    "title": "スマート農業のための画像処理(基礎)・二値化処理",
+    "objectID": "index.html#お知らせ",
+    "href": "index.html#お知らせ",
+    "title": "Uzuki−Lab",
     "section": "",
-    "text": "画像の二値化処理を学ぶための対話的な学習ツールです",
-    "crumbs": [
-      "研究",
-      "講義",
-      "スマート農業",
-      "2値化処理"
-    ]
+    "text": "2024年度時点で多くの部分が絶賛工事中です。\nスマ農だけ大慌てで作っている体たらく・・・"
   },
   {
-    "objectID": "courses/smart-ag/binarization.html#アプリの使い方",
-    "href": "courses/smart-ag/binarization.html#アプリの使い方",
-    "title": "スマート農業のための画像処理(基礎)・二値化処理",
-    "section": "1 📚 アプリの使い方",
-    "text": "1 📚 アプリの使い方\n\n\n1.1 1. 画像の観察\n左側の元画像をよく観察してください。この画像がどのような明暗の特徴を持っているか確認しましょう。\n\n\n1.2 2. ヒストグラムの確認\nヒストグラムで画像の明るさの分布を確認します。山が2つある場合は、二値化に適している目安となります。\n\n\n1.3 3. 閾値の調整\nスライダーを動かして二値化の閾値を調整します。結果を観察しながら、最適な値を探してみましょう。\n\n\n1.4 4. 結果の評価\n二値化された画像を確認し、目的に応じて適切な閾値が設定できているか評価します。",
-    "crumbs": [
-      "研究",
-      "講義",
-      "スマート農業",
-      "2値化処理"
-    ]
+    "objectID": "index.html#講義",
+    "href": "index.html#講義",
+    "title": "Uzuki−Lab",
+    "section": "",
+    "text": "栽培施設学\nスマート農業\nR講座\n統計基礎"
+  },
+  {
+    "objectID": "index.html#研究活動",
+    "href": "index.html#研究活動",
+    "title": "Uzuki−Lab",
+    "section": "",
+    "text": "研究活動の詳細はこちら"
+  },
+  {
+    "objectID": "courses/smart-ag/spectro-basic.html#光の干渉二重スリット実験",
+    "href": "courses/smart-ag/spectro-basic.html#光の干渉二重スリット実験",
+    "title": "分光分析の基礎",
+    "section": "1 1. 光の干渉：二重スリット実験",
+    "text": "1 1. 光の干渉：二重スリット実験\n光の波としての性質を理解するための基本的な実験である二重スリット実験について学びます。\n\nこのシミュレーターでは、二重スリットによる光の干渉パターンを観察できます。波長とスリット間隔を変更することで、干渉縞の変化を確認できます。\n\n1.1 使い方\n\n波長スライダー：380-750nmの範囲で波長を調整できます\nスリット間隔スライダー：500-2000nmの範囲でスリット間隔を調整できます\nスクリーン上の明暗の縞模様は、光の干渉による強め合いと弱め合いを表しています"
+  },
+  {
+    "objectID": "courses/smart-ag/spectro-basic.html#分光器の仕組み",
+    "href": "courses/smart-ag/spectro-basic.html#分光器の仕組み",
+    "title": "分光分析の基礎",
+    "section": "2 2. 分光器の仕組み",
+    "text": "2 2. 分光器の仕組み\n回折格子を用いた分光器の基本的な仕組みについて学びます。\n\nこのシミュレーターでは、回折格子による光の分光の仕組みを観察できます。波長に応じて光が異なる角度に回折される様子を確認できます。\n\n2.1 使い方\n\n波長スライダー：380-780nmの範囲で入射光の波長を変更できます\n回折格子の回転角が自動的に調整され、選択した波長の光が検出器に到達するようになります\n光路の色は波長に対応した可視光の色で表示されます"
+  },
+  {
+    "objectID": "courses/smart-ag/spectro-basic.html#ランベルトベールの法則",
+    "href": "courses/smart-ag/spectro-basic.html#ランベルトベールの法則",
+    "title": "分光分析の基礎",
+    "section": "3 3. ランベルト・ベールの法則",
+    "text": "3 3. ランベルト・ベールの法則\n物質による光の吸収を定量的に理解するためのランベルト・ベールの法則について学びます。\n\nこのシミュレーターでは、試料による光の吸収を観察できます。試料の種類、濃度、光路長を変更することで、吸光度と透過率の変化を確認できます。\n\n3.1 使い方\n\n試料選択：クロロフィル、カロテン、アントシアニンから選択できます\n波長スライダー：380-700nmの範囲で入射光の波長を調整できます\n濃度スライダー：試料濃度を0-2の範囲で調整できます\n光路長：5mmまたは10mmを選択できます\nグラフには各試料の吸収スペクトルが表示されます"
   },
   {
     "objectID": "courses/smart-ag/index.html",
@@ -81,6 +92,32 @@
       "講義",
       "スマート農業",
       "概要"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/color.html",
+    "href": "courses/smart-ag/color.html",
+    "title": "スマート農業のための画像処理(基礎)・カラー画像の仕組み",
+    "section": "",
+    "text": "HSV色空間を用いた特定色の抽出を行う対話的な学習ツールです",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "カラー画像の仕組み"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/color.html#システムの使い方",
+    "href": "courses/smart-ag/color.html#システムの使い方",
+    "title": "スマート農業のための画像処理(基礎)・カラー画像の仕組み",
+    "section": "1 📚 システムの使い方",
+    "text": "1 📚 システムの使い方\n\n\n1.1 1. 色の選択方法（3通り）\n以下の3つの方法から、抽出したい色を選択できます： - HSV色相環をクリック - 色相範囲(H)、彩度範囲(S)、明度範囲(V)のスライダーを調整 - プリセットボタン（緑色抽出、赤色抽出、黄色抽出）を使用\n\n\n1.2 2. 色の許容範囲の調整\n色相、彩度、明度それぞれについて最小値と最大値を設定して、抽出する色の範囲を調整します。\n\n\n1.3 3. プリセットの活用\n緑色抽出は葉の判定に、赤色抽出は果実の判定に利用できます。\n\n\n1.4 4. 結果の確認\n抽出結果を確認し、必要に応じて各パラメータを微調整します。",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "カラー画像の仕組み"
     ]
   },
   {
@@ -126,6 +163,37 @@
     "text": "5 まとめ\n分光分析技術は、農業における様々な場面で活用されています：\n\n環境制御：NDIR CO2センサーによる温室管理\n品質管理：赤外分光法による作物の状態評価\n圃場管理：マルチスペクトルカメラによる生育診断\n\nこれらの技術は、精密農業の実現に不可欠な要素となっています。"
   },
   {
+    "objectID": "courses/index.html",
+    "href": "courses/index.html",
+    "title": "講義",
+    "section": "",
+    "text": "1 講義\n\n栽培施設学 栽培施設学\nスマート農業 スマート農業\nR講座 R講座\n統計講座 統計講座"
+  },
+  {
+    "objectID": "courses/facility/index.html",
+    "href": "courses/facility/index.html",
+    "title": "栽培施設学",
+    "section": "",
+    "text": "1 絶賛工事中！",
+    "crumbs": [
+      "研究",
+      "講義",
+      "栽培施設学"
+    ]
+  },
+  {
+    "objectID": "courses/stats/index.html",
+    "href": "courses/stats/index.html",
+    "title": "統計の基礎",
+    "section": "",
+    "text": "1 絶賛工事中！",
+    "crumbs": [
+      "研究",
+      "講義",
+      "統計基礎"
+    ]
+  },
+  {
     "objectID": "courses/smart-ag/spectral.html#光の干渉二重スリット実験",
     "href": "courses/smart-ag/spectral.html#光の干渉二重スリット実験",
     "title": "分光分析の基礎",
@@ -145,81 +213,6 @@
     "title": "分光分析の基礎",
     "section": "3 3. ランベルト・ベールの法則",
     "text": "3 3. ランベルト・ベールの法則\n物質による光の吸収を定量的に理解するためのランベルト・ベールの法則について学びます。\n\nこのシミュレーターでは、試料による光の吸収を観察できます。試料の種類、濃度、光路長を変更することで、吸光度と透過率の変化を確認できます。\n\n3.1 使い方\n\n試料選択：クロロフィル、カロテン、アントシアニンから選択できます\n波長スライダー：380-700nmの範囲で入射光の波長を調整できます\n濃度スライダー：試料濃度を0-2の範囲で調整できます\n光路長：5mmまたは10mmを選択できます\nグラフには各試料の吸収スペクトルが表示されます\n\n\n\n\n\n次のページ：分光分析の応用"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Uzuki−Lab",
-    "section": "",
-    "text": "このサイトでは、研究室の活動内容や講義資料を公開しています。でもまあ、作りかけwww\n\n\n\n2024年度時点で多くの部分が絶賛工事中です。\nスマ農だけ大慌てで作っている体たらく・・・\n\n\n\n\n\n栽培施設学\nスマート農業\nR講座\n統計基礎\n\n\n\n\n研究活動の詳細はこちら"
-  },
-  {
-    "objectID": "index.html#お知らせ",
-    "href": "index.html#お知らせ",
-    "title": "Uzuki−Lab",
-    "section": "",
-    "text": "2024年度時点で多くの部分が絶賛工事中です。\nスマ農だけ大慌てで作っている体たらく・・・"
-  },
-  {
-    "objectID": "index.html#講義",
-    "href": "index.html#講義",
-    "title": "Uzuki−Lab",
-    "section": "",
-    "text": "栽培施設学\nスマート農業\nR講座\n統計基礎"
-  },
-  {
-    "objectID": "index.html#研究活動",
-    "href": "index.html#研究活動",
-    "title": "Uzuki−Lab",
-    "section": "",
-    "text": "研究活動の詳細はこちら"
-  },
-  {
-    "objectID": "research/index.html",
-    "href": "research/index.html",
-    "title": "研究",
-    "section": "",
-    "text": "絶賛工事中！"
-  },
-  {
-    "objectID": "courses/facility/index.html",
-    "href": "courses/facility/index.html",
-    "title": "栽培施設学",
-    "section": "",
-    "text": "1 絶賛工事中！",
-    "crumbs": [
-      "研究",
-      "講義",
-      "栽培施設学"
-    ]
-  },
-  {
-    "objectID": "courses/smart-ag/spectro-basic.html#光の干渉二重スリット実験",
-    "href": "courses/smart-ag/spectro-basic.html#光の干渉二重スリット実験",
-    "title": "分光分析の基礎",
-    "section": "1 1. 光の干渉：二重スリット実験",
-    "text": "1 1. 光の干渉：二重スリット実験\n光の波としての性質を理解するための基本的な実験である二重スリット実験について学びます。\n\nこのシミュレーターでは、二重スリットによる光の干渉パターンを観察できます。波長とスリット間隔を変更することで、干渉縞の変化を確認できます。\n\n1.1 使い方\n\n波長スライダー：380-750nmの範囲で波長を調整できます\nスリット間隔スライダー：500-2000nmの範囲でスリット間隔を調整できます\nスクリーン上の明暗の縞模様は、光の干渉による強め合いと弱め合いを表しています"
-  },
-  {
-    "objectID": "courses/smart-ag/spectro-basic.html#分光器の仕組み",
-    "href": "courses/smart-ag/spectro-basic.html#分光器の仕組み",
-    "title": "分光分析の基礎",
-    "section": "2 2. 分光器の仕組み",
-    "text": "2 2. 分光器の仕組み\n回折格子を用いた分光器の基本的な仕組みについて学びます。\n\nこのシミュレーターでは、回折格子による光の分光の仕組みを観察できます。波長に応じて光が異なる角度に回折される様子を確認できます。\n\n2.1 使い方\n\n波長スライダー：380-780nmの範囲で入射光の波長を変更できます\n回折格子の回転角が自動的に調整され、選択した波長の光が検出器に到達するようになります\n光路の色は波長に対応した可視光の色で表示されます"
-  },
-  {
-    "objectID": "courses/smart-ag/spectro-basic.html#ランベルトベールの法則",
-    "href": "courses/smart-ag/spectro-basic.html#ランベルトベールの法則",
-    "title": "分光分析の基礎",
-    "section": "3 3. ランベルト・ベールの法則",
-    "text": "3 3. ランベルト・ベールの法則\n物質による光の吸収を定量的に理解するためのランベルト・ベールの法則について学びます。\n\nこのシミュレーターでは、試料による光の吸収を観察できます。試料の種類、濃度、光路長を変更することで、吸光度と透過率の変化を確認できます。\n\n3.1 使い方\n\n試料選択：クロロフィル、カロテン、アントシアニンから選択できます\n波長スライダー：380-700nmの範囲で入射光の波長を調整できます\n濃度スライダー：試料濃度を0-2の範囲で調整できます\n光路長：5mmまたは10mmを選択できます\nグラフには各試料の吸収スペクトルが表示されます"
   },
   {
     "objectID": "courses/smart-ag/spectral-analysis.html#原理",
@@ -339,6 +332,32 @@
     ]
   },
   {
+    "objectID": "courses/smart-ag/binarization.html",
+    "href": "courses/smart-ag/binarization.html",
+    "title": "スマート農業のための画像処理(基礎)・二値化処理",
+    "section": "",
+    "text": "画像の二値化処理を学ぶための対話的な学習ツールです",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "2値化処理"
+    ]
+  },
+  {
+    "objectID": "courses/smart-ag/binarization.html#アプリの使い方",
+    "href": "courses/smart-ag/binarization.html#アプリの使い方",
+    "title": "スマート農業のための画像処理(基礎)・二値化処理",
+    "section": "1 📚 アプリの使い方",
+    "text": "1 📚 アプリの使い方\n\n\n1.1 1. 画像の観察\n左側の元画像をよく観察してください。この画像がどのような明暗の特徴を持っているか確認しましょう。\n\n\n1.2 2. ヒストグラムの確認\nヒストグラムで画像の明るさの分布を確認します。山が2つある場合は、二値化に適している目安となります。\n\n\n1.3 3. 閾値の調整\nスライダーを動かして二値化の閾値を調整します。結果を観察しながら、最適な値を探してみましょう。\n\n\n1.4 4. 結果の評価\n二値化された画像を確認し、目的に応じて適切な閾値が設定できているか評価します。",
+    "crumbs": [
+      "研究",
+      "講義",
+      "スマート農業",
+      "2値化処理"
+    ]
+  },
+  {
     "objectID": "courses/smart-ag/edge.html",
     "href": "courses/smart-ag/edge.html",
     "title": "スマート農業のための画像処理(基礎)・エッジ検出",
@@ -378,41 +397,22 @@
     ]
   },
   {
-    "objectID": "courses/smart-ag/color.html",
-    "href": "courses/smart-ag/color.html",
-    "title": "スマート農業のための画像処理(基礎)・カラー画像の仕組み",
-    "section": "",
-    "text": "HSV色空間を用いた特定色の抽出を行う対話的な学習ツールです",
-    "crumbs": [
-      "研究",
-      "講義",
-      "スマート農業",
-      "カラー画像の仕組み"
-    ]
-  },
-  {
-    "objectID": "courses/smart-ag/color.html#システムの使い方",
-    "href": "courses/smart-ag/color.html#システムの使い方",
-    "title": "スマート農業のための画像処理(基礎)・カラー画像の仕組み",
-    "section": "1 📚 システムの使い方",
-    "text": "1 📚 システムの使い方\n\n\n1.1 1. 色の選択方法（3通り）\n以下の3つの方法から、抽出したい色を選択できます： - HSV色相環をクリック - 色相範囲(H)、彩度範囲(S)、明度範囲(V)のスライダーを調整 - プリセットボタン（緑色抽出、赤色抽出、黄色抽出）を使用\n\n\n1.2 2. 色の許容範囲の調整\n色相、彩度、明度それぞれについて最小値と最大値を設定して、抽出する色の範囲を調整します。\n\n\n1.3 3. プリセットの活用\n緑色抽出は葉の判定に、赤色抽出は果実の判定に利用できます。\n\n\n1.4 4. 結果の確認\n抽出結果を確認し、必要に応じて各パラメータを微調整します。",
-    "crumbs": [
-      "研究",
-      "講義",
-      "スマート農業",
-      "カラー画像の仕組み"
-    ]
-  },
-  {
-    "objectID": "courses/stats/index.html",
-    "href": "courses/stats/index.html",
-    "title": "統計の基礎",
+    "objectID": "courses/r-course/index.html",
+    "href": "courses/r-course/index.html",
+    "title": "Ｒ講座",
     "section": "",
     "text": "1 絶賛工事中！",
     "crumbs": [
       "研究",
       "講義",
-      "統計基礎"
+      "Ｒ講座"
     ]
+  },
+  {
+    "objectID": "research/index.html",
+    "href": "research/index.html",
+    "title": "研究",
+    "section": "",
+    "text": "絶賛工事中！"
   }
 ]
