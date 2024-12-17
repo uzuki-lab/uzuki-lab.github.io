@@ -317,5 +317,47 @@
     "title": "研究",
     "section": "",
     "text": "絶賛工事中！"
+  },
+  {
+    "objectID": "courses/smart-ag/spectro-application.html",
+    "href": "courses/smart-ag/spectro-application.html",
+    "title": "分光分析の農業応用",
+    "section": "",
+    "text": "分光分析は、物質と電磁波の相互作用を利用して物質の性質や状態を分析する手法です。農業分野では、以下のような応用があります：\n\n作物の生育状態モニタリング\n温室内の環境制御\nリモートセンシングによる圃場管理\n\n本ページでは、分光分析の基本原理から実践的な応用まで、インタラクティブなシミュレーターを用いて解説します。"
+  },
+  {
+    "objectID": "courses/smart-ag/spectro-application.html#はじめに",
+    "href": "courses/smart-ag/spectro-application.html#はじめに",
+    "title": "分光分析の農業応用",
+    "section": "",
+    "text": "分光分析は、物質と電磁波の相互作用を利用して物質の性質や状態を分析する手法です。農業分野では、以下のような応用があります：\n\n作物の生育状態モニタリング\n温室内の環境制御\nリモートセンシングによる圃場管理\n\n本ページでは、分光分析の基本原理から実践的な応用まで、インタラクティブなシミュレーターを用いて解説します。"
+  },
+  {
+    "objectID": "courses/smart-ag/spectro-application.html#非分散型赤外線ndir方式のco2センサー",
+    "href": "courses/smart-ag/spectro-application.html#非分散型赤外線ndir方式のco2センサー",
+    "title": "分光分析の農業応用",
+    "section": "2 1. 非分散型赤外線（NDIR）方式のCO2センサー",
+    "text": "2 1. 非分散型赤外線（NDIR）方式のCO2センサー\n\n2.1 概要\nNDIR方式のCO2センサーは、CO2分子による赤外線の吸収を利用して濃度を測定します。このセンサーは以下の特徴を持ちます：\n\n特定波長（4.26 µm）の赤外線がCO2分子により吸収\n温度・圧力による影響の補正が必要\n高精度かつメンテナンスフリー\n\n\n\n2.2 インタラクティブシミュレーター\n以下のシミュレーターでは、CO2濃度、温度、圧力を変更して、測定値への影響を観察できます：\n\nスライダーでパラメータを調整\nCO2分子の運動と赤外線の透過を可視化\n温度・圧力補正の効果を確認\n\n{{&lt; react NDIRSimulation &gt;}}"
+  },
+  {
+    "objectID": "courses/smart-ag/spectro-application.html#ガス分析の仕組み赤外分光法",
+    "href": "courses/smart-ag/spectro-application.html#ガス分析の仕組み赤外分光法",
+    "title": "分光分析の農業応用",
+    "section": "3 2. ガス分析の仕組み：赤外分光法",
+    "text": "3 2. ガス分析の仕組み：赤外分光法\n\n3.1 概要\n赤外分光法は、分子の振動エネルギー準位に対応する赤外線の吸収を測定する手法です。農業での主な用途：\n\n温室内のCO2濃度管理\n作物の呼吸量測定\n水分量のモニタリング\n\n\n\n3.2 スペクトル分析シミュレーター\nこのシミュレーターでは、CO2とH2Oの赤外吸収スペクトルを観察できます：\n\n各ガスの濃度を調整可能\n吸収スペクトルの重なりを確認\n波長による吸収特性の違いを理解\n\n{{&lt; react spectral-analyzer-react.tsx &gt;}}"
+  },
+  {
+    "objectID": "courses/smart-ag/spectro-application.html#リモートセンシングマルチスペクトルカメラ",
+    "href": "courses/smart-ag/spectro-application.html#リモートセンシングマルチスペクトルカメラ",
+    "title": "分光分析の農業応用",
+    "section": "4 3. リモートセンシング：マルチスペクトルカメラ",
+    "text": "4 3. リモートセンシング：マルチスペクトルカメラ\n\n4.1 概要\nマルチスペクトルカメラは、複数の波長帯での反射特性を利用して、作物や土壌の状態を評価します：\n\n可視光域（400-700 nm）での反射特性\n植生指数（NDVI等）の算出\n生育状態の評価\n\n\n\n4.2 分光特性可視化\n以下のシミュレーターでは、様々な地表物質の分光特性を観察できます：\n\n波長による反射率の変化\n物質による特徴的なスペクトルパターン\n単一波長での観測結果\n\n{{&lt; react multispectral-vis.tsx &gt;}}"
+  },
+  {
+    "objectID": "courses/smart-ag/spectro-application.html#まとめ",
+    "href": "courses/smart-ag/spectro-application.html#まとめ",
+    "title": "分光分析の農業応用",
+    "section": "5 まとめ",
+    "text": "5 まとめ\n分光分析技術は、農業における様々な場面で活用されています：\n\n環境制御：NDIR CO2センサーによる温室管理\n品質管理：赤外分光法による作物の状態評価\n圃場管理：マルチスペクトルカメラによる生育診断\n\nこれらの技術は、精密農業の実現に不可欠な要素となっています。"
   }
 ]
